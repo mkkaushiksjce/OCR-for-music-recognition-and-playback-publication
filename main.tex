@@ -583,19 +583,24 @@ OCR, MusicXML, Cam Scanner, Template matching, Normalized cross correlation, Mat
 % stfloats package.
 
 \section{MusicXML}
-MusicXML (Music Extensive Markup Language) is a digital sheet music interchange and distribution format. The goal is to create a universal format for common Western music notation, similar to the role that the MP3 format serves for recorded music. The musical information is designed
-to be usable by notation programs, sequencers and other performance programs, music education
+MusicXML (Music Extensive Markup Language) is a digital sheet music interchange and distribution format. The goal is to create a universal format for common Western music notation, similar to the role that the MP3 format serves for recorded music.\par
+The musical information is designed to be usable by notation programs, sequencers and other performance programs, music education
 programs and music databases. It is designed from the ground up for sharing sheet music files between applications and for archiving sheet music files for use in the future. MusicXML files are
 readable and usable by a wide range of music notation applications. MusicXML complements the
 native file formats used by several musical score writing programs, which are designed for rapid
 and interactive use. MusicXML
 files are the standard for sharing interactive sheet music. Using MusicXML, users can create music
-in one program and share the results – back and forth – with people using other programs. 
+in one program and share the results – back and forth – with people using other programs. \par
+MusicXML was based primarily on two academic music formats:
+\begin{itemize}
+  \item The MuseData format, developed by Walter Hewlett at the Center for Computer Assisted Research in the Humanities (CCARH), located at Stanford University .
+  \item The Humdrum format, developed by David Huron, based at Ohio State University.
+\end{itemize}
 
 
 \section{Software Requirements}
  The input image acquired has to be subjected to various processing operations for recognising the characters in the music score sheet. Thus, the platform used for the implementation  should support
-image processing operations. Matlab has extensive support for image processing operations through “Image Processing Toolbox". Matlab also has “Data and File Management Toolbox” which can be used to read, write and generate XML files. MusicXML being one of the types of XML file, the toolbox will be able to handle it's basic operations also. Hence Matlab becomes a good choice for implementation. For reading MusicXML files “MuseScore” can be used. MuseScore is a free and opensource score writer software with rich features.
+image processing operations. Matlab has extensive support for image processing operations through “Image Processing Toolbox". Matlab also has “Data and File Management Toolbox” which can be used to read, write and generate XML files. MusicXML being one of the types of XML file, the toolbox will be able to handle it's basic operations also. Hence Matlab becomes a good choice for implementation. Matlab version R2014a - 8.3.0.532 has been used for the implementation of the algorithm. For reading MusicXML files “MuseScore” can be used. MuseScore is a free and opensource score writer software with rich features.
 
 \section{Algorithm and Implementation}
 This section presents the various steps involved in converting the captured image of a score sheet into MusicXML file.
