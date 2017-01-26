@@ -497,6 +497,70 @@ OCR, MusicXML, Cam Scanner, Template matching, Normalized cross correlation, Mat
 
 \subsection{Subsection Heading Here}
 
+\section{Overview of Sheet Music}
+% Intro text here
+\subsubsection{The Staff}
+Music is written on a staff (plural: staves) which is five horizontal parallel lines. The five lines
+create four spaces between them. The staff lines are shown in the Figure 2.1 .
+
+\subsubsection{Measure}
+To make music easier to read, the staff is divided into sections by vertical lines called bar lines.
+There are two types of bar lines. The single bar line is a single thin line from the top line to the
+bottom line of the staff. The double bar line marks the end of a section, or the end of a song. It has
+a thin line in addition to a thicker line close by to the right.
+The area between two bar lines is called a measure. Some measures can have more notes in
+between them than others. Hence the space between the bar lines does not have to be equal. The
+bar lines, double bar lines and measures are shown in Figure 2.2 .
+
+\subsubsection{Notes}
+Depending on the position of the notes on the stafflines, there are 2 types of notes. 
+\begin{itemize}
+  \item \textbf{Space Notes}: A space note is a note whose note head fits within a space on the staff.
+  \item \textbf{Line Notes}: Any note with a line through it.
+\end{itemize}
+These variations in writing the notes on the staff lines are used to differentiate the pitch of the
+notes. Pitch is the highness or lowness of a note. It is determined by the frequency of the waves
+producing it. See Figure 2.3
+
+\subsubsection{Note lengths}
+There are different types of notes depending on the number of beats. In this
+project, the recognition and the playback have been implemented for whole note, half note
+and quarter note. Note lengths and symbols are as shown in the Figure 2.4 .
+
+\subsubsection{Note head and stem}
+Note head is the round part. The position of the note head gives the
+pitch. The stem is the part that sticks up or down from the head.Whole notes do not have
+stems. Quarter notes and half notes have stems. Refer to Figure 2.5 .The stem can go either up or down. When a note is on the third line of the staff or below, stems
+grow up from the rightside of the staff head. Refer to Figure 2.6 .If the notes are on the third line or below, the stems go down on the left side. Refer to Figure
+2.7 .
+
+\subsubsection{Note Names}
+The music alphabet uses A,B,C,D,E,F and G. The notes are named alphabetically when the notes are written one after the other.
+
+\subsubsection{Treble Clef}
+A clef is a symbol used at the beginning of a musical staff to tell the reader which letter name
+goes with which line or space. The treble clef is the most common. It is also called as G clef as it
+shows where the note G is on the staff. The inner loop of the treble clef circles the second line of
+staff. Refer to Figure 2.8
+
+\subsubsection{Rests}
+Rests define the silence in music. Depending on the duration of rest there are different types of
+rests. They are shown in Figure 2.9 .
+
+\subsubsection{Time Signature}
+It appears at the beginning of every peice of music score. It gives the information of how many
+beats are in each measure.
+4/4 time :
+This time signature is used to indicate that there will be 4 beats in each measure. Refer to Figure
+2.10
+
+
+\subsubsection{Key Signatures}
+The key signature fits between the clef and the time signature. A key signature tells which notes
+have flats or sharps for an entire piece of music. Key signature are produced from the combinations
+of flats and sharps. There are 15 key signatures common to all the instruments and are shown in
+Figure 2.11. The symbols of the music sheet described in this chapter are the symbols that have been recognised by the implemented Optical Character Recognition for Music notes and playback system.
+
 % needed in second column of first page if using \IEEEpubid
 %\IEEEpubidadjcol
 
@@ -741,8 +805,53 @@ this step the vertical translation is determined by using the bottom most staff 
 
 \subsection{Conversion to MusicXML}
 For converting the recognized symbols into xml file, the symbols are arranged according to their (x,y) coordinate values. A structure consisting of (x,y) coordinates, staff number, duration, stem, octave, step, voice and alter is created. The structure will be converted into table. The table is sorted and the XML file is generated. The structure for a half note with stem down is shown in Figure 4.12. Similarly the structure parameters vary for different notes. The output xml file defines each and every symbol present on the input music score sheet. This file can be played using MuseScore to generate the musical tone. 
-The XML file generated consits of the following
+The XML file generated consists of the following
 \subsubsection{Declaration}
+
+This is the XML declaration required of all XML documents. It specifies that the characters are
+written in the Unicode encoding "UTF-8". This is the version of Unicode that has ASCII as a subset.
+Setting the value of standalone to "no" means that document is defined with an external definition
+in another file.\newline
+\textit{ \textless $? xml version=``1.0" encoding=``UTF_8" standalone=``no"? $ \textgreater }
+
+\subsubsection{Root element type}
+The <score-partwise> element is made up of parts, where each
+part is made up of measures.\newline
+\textit{ \textless $ score-partwise version = ``3.0" $ \textgreater }  
+
+\subsubsection{ Part id}
+The id attribute refers to an id attribute for a score-part in the header. \newline
+\textit{ \textless $part id=``P1" $ \textgreater } 
+
+\subsubsection{ Measure number}
+Indicates the start of the first measure in the first part.\newline
+\textit{ \textless $measure number=``1" $ \textgreater } 
+
+\subsubsection{Attributes}
+The attributes element contains key information needed to interpret the notes and musical data
+that follow in this part.Attributes contain the following:
+\textit{ \textless  attributes \textgreater } 
+
+\subsubsection{ Staves}
+The staves element indicates the number of staves in a musical part.
+
+\subsubsection{Clef}
+The clef element is used to indicate the clef for the staff. Itis used for specifying the clef’s sign
+and its line.The treble clef definition indicates that the second line from the bottom of the staff is a G.
+
+\subsubsection{Number}
+The number attribute indicates the staff number if the part has more than one staff.
+
+\subsubsection{Stem}
+Stem direction is represented with the stem element, whose value can be up, down or none.
+
+\subsection{Playback}
+The playback feature is supported by using MuseScore software. The recognized symbols in
+the MusicXML format is imported to MuseScore and played. The recognized score can be seen
+in MuseScore and can be compared with the input score sheet for any errors. There are many
+features in MuseScore like tempo adjustment, equalizer, mixer and synthesizer for advanced play
+back options. The MuseScore interface is as shown in Figure 4.13
+
 % if have a single appendix:
 %\appendix[Proof of the Zonklar Equations]
 % or
