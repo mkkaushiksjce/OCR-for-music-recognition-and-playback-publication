@@ -604,11 +604,65 @@ image processing operations. Matlab has extensive support for image processing o
 
 \section{Implementation}
 This section presents the steps involved in converting the captured image of a score sheet into MusicXML file.
-{\includegraphics[width=3in,height=3.5in,clip,keepaspectratio]{resources/flowchart/flowchart}}\centering
 
 
+{
+\begin{figure}
+\includegraphics[width=3in,height=3.5in,clip,keepaspectratio]{resources/flowchart/flowchart}
+\centering
+\caption{Flow chart for the steps involved conversion of image of score sheet to MusicXML file}
+\end{figure}
+}
 
+\subsection{Image Acquisition}
+ The music score sheet image is acquired from MuseScore software. The file format used is ``png". A sample image of score sheet is shown in figure2 
+ 
+ \subsection{Image Preprocessing}
+  The image acquired will be in rgb format and is converted into grey scale image. The purpose of converting an RGB image into gray scale is due to the fact that it eliminates the hue and saturation information, as they contribute very less for the total appearance of the image and retains the needed luminance (intensity).  The main advantages of image preprocessing are it helps in reducing the noise in images, Variations in illumination and viewing geometry between images (for optical sensors) can be corrected by image pre-processing techniques and helps to convert the image into a form that is more suitable for further
+operations like morphological operations and feature extraction.
 
+\subsection{Image Segmentation}
+Image segmentation is the process of partitioning an image into parts or regions. This division into parts is often based on the characteristics of the pixels in the image. Thresholding method of segmenting method is used here to convert a grey scale image into binary image. This transformation is important because the morphological operations like dilation, erosion, etc. can be done efficiently on a binary image. Examples of a segmented image and a non-segmented image are shown in Figure 4.4 and Figure
+4.3. Figure 4.3 contains pixel values in the gray scale and each pixel can take any value out of the available 256 gray scale levels. As seen from figures 4.3 and 4.4, image segmentation converts the gray scale image into a binary image. 
+
+\subsection{Morphological Image processing}
+Morphological image processing is a collection of non-linear operations related to the shape or morphology of features in an image. Morphological operations rely only on the relative ordering of
+pixel values, not on their numerical values and therefore are especially suited to the processing of binary images. Morphological techniques typically probe an image with a small template known as a Structuring Element (SE). The SE is very small compared to the image size. They are usually made up of
+ones and zeroes. The SEs usually have odd orders like 3x3, 5x5, 7x7 etc. because, while performing any morphological operations, the centre pixel of the SE is placed on each and every pixel of the
+image and the operation is thus performed. The SE is positioned at all possible locations in the image and it is compared with the corresponding neighborhood pixels. By marking the locations
+where SE fits or hits the image, information about the structure of the image can be obtained. The SE ``fits” image if for each of its pixels that is set to 1(foreground), the corresponding image pixel
+is also set to 1 \par. Dilation and erosion are morphological image processing techniques which are extensively used in staff line removal.
+
+\subsection{Staff Line Removal}
+ Removing staff lines is important, because
+in the score sheet essentially the same symbol will be placed on different staff lines. Without this step, the same symbol will be treated as different when they are on different staff lines. For removal of staff lines morphological image processing techniques such as dilation and erosion are used. The image is subjected to dilation two times which is then followed by erosion.
+
+\subsubsection{Dilation}
+The dilation of an image f by a structuring element s (denoted by $ f \oplus s $)
+produces a new binary image 
+\[g = f \oplus s \] 
+with ones in all locations (x,y) of a structuring element’s origin at which that structuring element s hits the the input image f, i.e. g(x,y) = 1 if s hits f and 0 otherwise, repeating f, i.e. g(x,y) = 1 if s hits f and 0 otherwise, repeating. \par
+The holes enclosed by a single region and gaps between different regions become smaller, and
+small intrusions into boundaries of a region are filled in. Figure 4.5 shows the effects of dilation on an input image.
+
+\subsubsection{Erosion}
+The erosion of a binary image f by a structuring element s (denoted by $ f \ominus s $)
+produces a new binary image
+\[g = f \ominus s \]
+with ones in all locations (x,y) of a structuring element’s origin at which that
+structuring element s fits the input image f, i.e. g(x,y) = 1 is s fits f and 0 otherwise, repeating for
+all pixel coordinates (x,y). \par
+Erosion with small square structuring elements shrinks an image by stripping away a layer of
+pixels from both the inner and outer boundaries of regions. The holes and gaps between different
+regions become larger and small details are eliminated.\par
+Larger structuring elements have a more pronounced effect, the result of erosion with a large
+structuring element being similar to the result obtained by iterated erosion using a smaller structuring element of the same shape. If s1 and s2 are a pair of structuring elements identical in shape,
+with s2 twice the size of s1, then
+%\[ f \ominus s2 \thickapprox (f \ominus s1) \ominus s1 \]
+Erosion removes small-scale details from a binary image but simultaneously reduces the size of regions of interest, too. By subtracting the eroded image from the original image, boundaries of each region can be found:
+\[ b = f - (f \ominus s) \]
+where f is an image of the regions, s is structuring element, and b is an image of the region
+boundaries. Figure 4.6 shows the effects of erosion on an input image
 
 % if have a single appendix:
 %\appendix[Proof of the Zonklar Equations]
