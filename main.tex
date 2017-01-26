@@ -596,7 +596,50 @@ MusicXML was based primarily on two academic music formats:
   \item The MuseData format, developed by Walter Hewlett at the Center for Computer Assisted Research in the Humanities (CCARH), located at Stanford University .
   \item The Humdrum format, developed by David Huron, based at Ohio State University.
 \end{itemize}
+MusicXML has two different top-level Document Type Defitions (DTDs), each with its own
+root element. If the partwise DTD is used, the root element is <score-partwise>. The musical part
+is primary, and measures are contained within each part. If the timewise DTD is used, the root
+element is <score-timewise>. The measure is primary, and musical parts are contained within each
+measure. The MusicXML XML Schema Definition (XSD) includes both of the top-level document
+elements in a single XSD file.Having two different structures does not work well if there is no
+automatic way to switch between them. MusicXML provides two EXtensible Stylesheet Language
+Transformations (XSLT) stylesheets to convert back and forth between the two document types. \par
+Score header contains some basic metadata about a musical score, such as the title and composer.
+It also contains the part-list, which lists all the parts or instruments in a musical score.
+MusicXML music data contains two main types of elements. One set of elements is used primarily to represent how a piece of music should sound. These are the elements that are used when
+creating a MIDI file from MusicXML. The other set is used primarily to represent how a piece of
+music should look.These elements are used when creating a MuseScore file from MusicXML. The terminology used in XML are as follows.
 
+\subsubsection{Tag}
+ A markup construct that begin with ``<” and ends with ``>”. There are three types of tags namely start tags, end tags and empty element tag.
+
+\subsubsection{Element}
+An XML element is the central building block of any XML document. It is a logical document component which begins with a start tag and ends with an end tag.
+
+\subsubsection{Root element}
+The root element is the first named tag of every XML file and is a container for all other elements.
+
+\subsubsection{Parent element}
+An XML element that contains another element.
+
+\subsubsection{Child element}
+ An XML element that is contained within a parent element. A child element sits inside of the parent and further itemizes the tags within the file.
+ 
+ \subsubsection{Attribute}
+  A markup construct consisting of a name \& value pair that exists within a start tag
+or element tag.
+
+\subsubsection{Data String}
+ A data string is the information that the veiwer can see. For example, a description of an inventory item would be a data string. Data strings sit between the opening and
+closing tags of element.
+
+\subsubsection{XML declaration}
+The declaration statement gives the browser information to recognize
+the language and syntax of the file. Without a declaration statement, the Internet processor
+is unable to compute the code. This is the first line of any XML document and defines the
+language, version, specifies encoding and declares the standalone status of the file. Only
+the language definition and version are required for a declaration statement. Encoding and
+standalone are optional attributes.
 
 \section{Software Requirements}
  The input image acquired has to be subjected to various processing operations for recognising the characters in the music score sheet. Thus, the platform used for the implementation  should support
@@ -661,9 +704,45 @@ with s2 twice the size of s1, then
 %\[ f \ominus s2 \thickapprox (f \ominus s1) \ominus s1 \]
 Erosion removes small-scale details from a binary image but simultaneously reduces the size of regions of interest, too. By subtracting the eroded image from the original image, boundaries of each region can be found:
 \[ b = f - (f \ominus s) \]
-where f is an image of the regions, s is structuring element, and b is an image of the region
-boundaries. Figure 4.6 shows the effects of erosion on an input image
+where f is an image of the regions, s is structuring element, and b is an image of the region boundaries. Figure 4.6 shows the effects of erosion on an input image.
 
+\subsection{Symbol Recognition}
+The symbol recognition is the critical and most important step OCR systems. This step actually determines the performance of the overall project. Along with the symbol recognition, vertical translation has to be determined to get the output. To recognize the symbols, template matching is used. A template
+is a small image (sub-image), the goal is to find occurrences of this template in a larger image. Template matching techniques compare portions of images against one another. Sample images are used to recognize similar objects in source image.\par
+Template matching has been a classical approach to the problems of locating and recognizing of an object in an image. Among several matching methods, Normalized Cross Correlation and Square root of Sum of Square Differences have been used as the measure for similarity. Moreover, many other template matching techniques, such as Sum of Absolute Differences (SAD) and Sequential Similarity Detection Algorithm (SSDA) have been adopted in many applications for pattern recognition. In the project Normalized Cross Correlation technique is used for template matching. \par
+Correlation is a measure of the degree to which two variables agree, not necessary in actual value but in general behavior. The two variables are the corresponding pixel values in two images, template and source. The cross-correlation of two real continuous functions x(t) and y(t) , is defined by
+\[ \phi _{xy} (t) = \int x(t - \tau  )y(\tau)d \tau \]
+In comparison to convolution
+\[ x(t)*y(t) = \int _{- \infty }^{ \infty } x( \tau - t)*y(\tau)d \tau \]
+It can be seen that the only difference is that for the cross correlation, one of the two functions is not reversed.
+\[ \phi _{xy} (t) = x(-t)*y(t) \]
+Since the operation of time reversal is the same as taking the complex conjugate in the frequency domain.
+\[ \phi_{xy} = FT[\phi|xy(t)] = X(f)*Y(f) \]
+In the discrete domain, the correlation of two real time series $x_i$, i = 0, 1, . . . , M-1 and $y_j$, j = 0,1, . . . , N-1 is by analogy to equation (1) given by
+\[ \phi _{xy, k} = \sum_{j = max(0,k)}^{min(M-1+k, N-1)} x_{j-k} + y_{j} \]
+where k = -[M+1],0,(N-1)
+
+\subsection{Normalized Cross Correlation}
+The normalized correlation for two time series can be defined as
+\[ \phi' _{xy}(t) = \frac{ \phi _{xy}(t) }{ \sqrt{ \phi _{xx}(0)\phi _{yy}(0) } } \]
+
+The normalized quantity will vary between -1 and 1. A value of 1 indicates that at the alignment, the two time series have the exact shape (the amplitudes may be different) while a value -1 indicates that they have the same shape except that they have the opposite signs. A value of 0 shows that they are completely uncorrelated. In practice when one applies this normalization to real discrete signals, one will find that a correlation coefficient greater than about 0.7 or 0.8 indicates a pretty good match. \par
+
+The main advantage of the normalized cross correlation over the ordinary cross correlation is that it is less sensitive to linear changes in the amplitude of illumination in the two compared images. Furthermore, the Normalized Cross Correlation is confined in the range between –1 and 1. The setting of detection threshold value is much simpler than the cross correlation. There are several set of templates which are used to determine the symbols using the normalized
+cross correlation method. The database of symbols includes flat, sharp, rests, half note, whole note and quarter note as shown in Figures 4.7 to 4.11.
+
+\subsubsection{Vertical Translation}
+Vertical Translation of a symbol is used to denote its pitch. It is also a crucial parameter in determining the actual symbol. Any error in this step will distort music. Hence it is one part of the recognition where error is intolerable. The position of staff lines in the score sheet is fixed. This principle is useful in finding out the vertical translation. After the normalized cross correlation, the (x,y) coordinate value of the centre pixel will be available. Comparing this with the standard value, the vertical translation can be easily obtained. Combining both the symbol and its vertical translation the perfect output is obtained. After this step finally the symbols will be ready for Music
+XML conversion and playback.
+
+\subsection{Symbol Interpretation}
+The recognized symbol needs to be interpreted to complete the recognition part. The interpretation part mainly depends on the clef that is used by the music instrument and also it needs to be combined with the vertical translation value to get the final result. When the input is normalized cross correlated with the template, the symbols corresponding to the template will be recognized. After
+this step the vertical translation is determined by using the bottom most staff line as a reference. But after this step the output that is produced will have similar symbols next to each other, hence there is a need to put it all together.
+
+\subsection{Conversion to MusicXML}
+For converting the recognized symbols into xml file, the symbols are arranged according to their (x,y) coordinate values. A structure consisting of (x,y) coordinates, staff number, duration, stem, octave, step, voice and alter is created. The structure will be converted into table. The table is sorted and the XML file is generated. The structure for a half note with stem down is shown in Figure 4.12. Similarly the structure parameters vary for different notes. The output xml file defines each and every symbol present on the input music score sheet. This file can be played using MuseScore to generate the musical tone. 
+The XML file generated consits of the following
+\subsubsection{Declaration}
 % if have a single appendix:
 %\appendix[Proof of the Zonklar Equations]
 % or

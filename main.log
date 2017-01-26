@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6200 64-bit) (preloaded format=pdflatex 2017.1.8)  26 JAN 2017 12:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6200 64-bit) (preloaded format=pdflatex 2017.1.8)  26 JAN 2017 15:39
 entering extended mode
 **./main.tex
 (main.tex
@@ -251,7 +251,7 @@ File: resources/flowchart/flowchart.png Graphic file (type png)
 
 <use resources/flowchart/flowchart.png>
 Package pdftex.def Info: resources/flowchart/flowchart.png used on input line 6
-11.
+15.
 (pdftex.def)             Requested size: 116.38835pt x 252.95071pt.
  [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
@@ -267,42 +267,50 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
  [2 <./resources/flowchart/flowchart.png>]
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+ [3]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 726.
+(Font)              <8> on input line 766.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 726.
+(Font)              <6> on input line 766.
 
-<picture.png, id=20, 84.315pt x 98.3675pt>
+<picture.png, id=27, 84.315pt x 98.3675pt>
 File: picture.png Graphic file (type png)
  <use picture.png>
-Package pdftex.def Info: picture.png used on input line 742.
+Package pdftex.def Info: picture.png used on input line 782.
 (pdftex.def)             Requested size: 72.27145pt x 84.3167pt.
 File: picture.png Graphic file (type png)
  <use picture.png>
-Package pdftex.def Info: picture.png used on input line 742.
+Package pdftex.def Info: picture.png used on input line 782.
 (pdftex.def)             Requested size: 72.27145pt x 84.3167pt.
 
-[3
+[4
 
  <./picture.png>] (main.aux) ) 
 Here is how much of TeX's memory you used:
  2364 strings out of 493333
  37484 string characters out of 3139192
- 104586 words of memory out of 3000000
+ 103586 words of memory out of 3000000
  5879 multiletter control sequences out of 15000+200000
  42049 words of font info for 75 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
  40i,10n,37p,1194b,318s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base
-/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times
-/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (3 pages, 124759 bytes).
+/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/ut
+mb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (4 pages, 172129 bytes).
 PDF statistics:
- 51 PDF objects out of 1000 (max. 8388607)
+ 70 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  29 words of extra memory for PDF output out of 10000 (max. 10000000)
 
