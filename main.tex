@@ -597,7 +597,7 @@ MusicXML was based primarily on two academic music formats:
   \item The Humdrum format, developed by David Huron, based at Ohio State University.
 \end{itemize}
 MusicXML has two different top-level Document Type Defitions (DTDs), each with its own
-root element. If the partwise DTD is used, the root element is <score-partwise>. The musical part
+root element. If the partwise DTD is used, the root element is  \textless score-partwise\textgreater . The musical part
 is primary, and measures are contained within each part. If the timewise DTD is used, the root
 element is <score-timewise>. The measure is primary, and musical parts are contained within each
 measure. The MusicXML XML Schema Definition (XSD) includes both of the top-level document
@@ -611,7 +611,7 @@ creating a MIDI file from MusicXML. The other set is used primarily to represent
 music should look.These elements are used when creating a MuseScore file from MusicXML. The terminology used in XML are as follows.
 
 \subsubsection{Tag}
- A markup construct that begin with ``<” and ends with ``>”. There are three types of tags namely start tags, end tags and empty element tag.
+ A markup construct that begin with ``\textless" and ends with `` \textgreater ". There are three types of tags namely start tags, end tags and empty element tag.
 
 \subsubsection{Element}
 An XML element is the central building block of any XML document. It is a logical document component which begins with a start tag and ends with an end tag.
@@ -630,7 +630,7 @@ An XML element that contains another element.
 or element tag.
 
 \subsubsection{Data String}
- A data string is the information that the veiwer can see. For example, a description of an inventory item would be a data string. Data strings sit between the opening and
+ A data string is the information that the viewer can see. For example, a description of an inventory item would be a data string. Data strings sit between the opening and
 closing tags of element.
 
 \subsubsection{XML declaration}
