@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6200 64-bit) (preloaded format=pdflatex 2017.1.8)  26 JAN 2017 20:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.31)  2 APR 2017 10:38
 entering extended mode
 **./main.tex
 (main.tex
-LaTeX2e <2016/03/31> patch level 3
+LaTeX2e <2017/01/01> patch level 1
 Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
 (IEEEtran.cls
 Document Class: IEEEtran 2012/11/21 V1.8c by Harald Hanche-Olsen and Anders Chr
@@ -123,7 +123,7 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks15
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
-Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2016/10/09 v1.0u Standard LaTeX Graphics (DPC,SPQR)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
@@ -134,7 +134,7 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
-File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
+File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
@@ -162,20 +162,7 @@ LaTeX Font Info:    ... okay on input line 386.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 386.
 LaTeX Font Info:    ... okay on input line 386.
 
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count110
-\scratchdimen=\dimen119
-\scratchbox=\box27
-\nofMPsegments=\count111
-\nofMParguments=\count112
-\everyMPshowfont=\toks16
-\MPscratchCnt=\count113
-\MPscratchDim=\dimen120
-\MPnumerator=\count114
-\makeMPintoPDFobject=\count115
-\everyMPtoPDFconversion=\toks17
-) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
 Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
 )
 
@@ -304,13 +291,13 @@ Package pdftex.def Info: picture.png used on input line 930.
 (pdftex.def)             Requested size: 72.27145pt x 84.3167pt.
  [5 <./picture.png>] (main.aux) ) 
 Here is how much of TeX's memory you used:
- 2383 strings out of 493333
- 37790 string characters out of 3139192
- 106586 words of memory out of 3000000
- 5894 multiletter control sequences out of 15000+200000
+ 2089 strings out of 493333
+ 33886 string characters out of 3139194
+ 102832 words of memory out of 3000000
+ 5603 multiletter control sequences out of 15000+200000
  43156 words of font info for 76 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
- 40i,10n,37p,1194b,318s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,10n,37p,1194b,318s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/b
 ase/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/P
@@ -322,7 +309,7 @@ public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times
 /utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/
 Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (5 pages, 187721 bytes).
+Output written on main.pdf (5 pages, 187900 bytes).
 PDF statistics:
  73 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
