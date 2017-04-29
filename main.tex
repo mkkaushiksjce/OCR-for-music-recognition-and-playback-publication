@@ -15,7 +15,6 @@
 %% http://www.ieee.org/
 
 
-
 % *** Authors should verify (and, if needed, correct) their LaTeX system  ***
 % *** with the testflow diagnostic prior to trusting their LaTeX platform ***
 % *** with production work. IEEE's font choices can trigger bugs that do  ***
@@ -579,6 +578,30 @@ stems. Quarter notes and half notes have stems. Refer to Fig. 6 .The stem can go
 \caption{Notes with stem down}
 \end{figure}
 
+\begin{figure}
+\includegraphics[width=3in,height=3.5in,clip,keepaspectratio]{resources/images/treble_cleff}
+\centering
+\caption{Treble clef with note names}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=1.5in,height=3.5in,clip,keepaspectratio]{resources/images/rest}
+\centering
+\caption{Types of rests}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=1.0in,height=1.0in,clip,keepaspectratio]{resources/images/time_signature_4_4}
+\centering
+\caption{4/4 time signature}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=3.0in,height=2.0in,clip,keepaspectratio]{resources/images/key_signatures}
+\centering
+\caption{Key signatures}
+\end{figure}
+
 \subsubsection{Note Names}
 The music alphabet uses A,B,C,D,E,F and G. The notes are named alphabetically when the notes are written one after the other.
 
@@ -586,25 +609,24 @@ The music alphabet uses A,B,C,D,E,F and G. The notes are named alphabetically wh
 A clef is a symbol used at the beginning of a musical staff to tell the reader which letter name
 goes with which line or space. The treble clef is the most common. It is also called as G clef as it
 shows where the note G is on the staff. The inner loop of the treble clef circles the second line of
-staff. Refer to Figure 2.8
+staff. Refer to Fig. 9.
 
 \subsubsection{Rests}
 Rests define the silence in music. Depending on the duration of rest there are different types of
-rests. They are shown in Figure 2.9 .
+rests. They are shown in Fig. 10.
 
 \subsubsection{Time Signature}
-It appears at the beginning of every peice of music score. It gives the information of how many
+It appears at the beginning of every piece of music score. It gives the information of how many
 beats are in each measure.
 4/4 time :
-This time signature is used to indicate that there will be 4 beats in each measure. Refer to Figure
-2.10
+This time signature is used to indicate that there will be 4 beats in each measure. Refer to Fig. 11.
 
 
 \subsubsection{Key Signatures}
 The key signature fits between the clef and the time signature. A key signature tells which notes
 have flats or sharps for an entire piece of music. Key signature are produced from the combinations
 of flats and sharps. There are 15 key signatures common to all the instruments and are shown in
-Figure 2.11. The symbols of the music sheet described in this chapter are the symbols that have been recognized by the implemented Optical Character Recognition for Music notes and playback system.
+Fig. 12. The symbols of the music sheet described in this chapter are the symbols that have been recognized by the implemented Optical Character Recognition for Music notes and playback system.
 
 
 
@@ -760,24 +782,40 @@ image processing operations. Matlab has extensive support for image processing o
 This section presents the steps involved in converting the captured image of a score sheet into MusicXML file.
 
 
-{
-\begin{figure}
-\includegraphics[width=3in,height=3.5in,clip,keepaspectratio]{resources/flowchart/flowchart}
-\centering
-\caption{Flow chart for the steps involved conversion of image of score sheet to MusicXML file}
-\end{figure}
-}
-
 \subsection{Image Acquisition}
- The music score sheet image is acquired from MuseScore software. The file format used is ``png". A sample image of score sheet is shown in figure2 
+ The music score sheet image is acquired from MuseScore software. The file format used is ``png". A sample image of score sheet is shown in Fig. 14.
+ 
  
  \subsection{Image Preprocessing}
   The image acquired will be in rgb format and is converted into grey scale image. The purpose of converting an RGB image into gray scale is due to the fact that it eliminates the hue and saturation information, as they contribute very less for the total appearance of the image and retains the needed luminance (intensity).  The main advantages of image preprocessing are it helps in reducing the noise in images, Variations in illumination and viewing geometry between images (for optical sensors) can be corrected by image pre-processing techniques and helps to convert the image into a form that is more suitable for further
 operations like morphological operations and feature extraction.
 
 \subsection{Image Segmentation}
-Image segmentation is the process of partitioning an image into parts or regions. This division into parts is often based on the characteristics of the pixels in the image. Thresholding method of segmenting method is used here to convert a grey scale image into binary image. This transformation is important because the morphological operations like dilation, erosion, etc. can be done efficiently on a binary image. Examples of a segmented image and a non-segmented image are shown in Figure 4.4 and Figure
-4.3. Figure 4.3 contains pixel values in the gray scale and each pixel can take any value out of the available 256 gray scale levels. As seen from figures 4.3 and 4.4, image segmentation converts the gray scale image into a binary image. 
+Image segmentation is the process of partitioning an image into parts or regions. This division into parts is often based on the characteristics of the pixels in the image. Thresholding method of segmenting method is used here to convert a grey scale image into binary image. This transformation is important because the morphological operations like dilation, erosion, etc. can be done efficiently on a binary image. Examples of a segmented image and a non-segmented image are shown in Fig. 15 and Fig. 16. Fig. 16 contains pixel values in the gray scale and each pixel can take any value out of the available 256 gray scale levels. As seen from figures 4.3 and 4.4, image segmentation converts the gray scale image into a binary image. 
+
+\begin{figure}
+\includegraphics[width=3in,height=3.5in,clip,keepaspectratio]{resources/flowchart/flowchart}
+\centering
+\caption{Flow chart for the steps involved conversion of image of score sheet to MusicXML file}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=3in,height=3.5in,clip,keepaspectratio]{resources/implementation/good_tone}
+\centering
+\caption{Music Score sheet image given as input}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=1in,height=1.5in,clip,keepaspectratio]{resources/implementation/non_segmented_image}
+\centering
+\caption{A non segmented image}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=1.0in,height=1.5in,clip,keepaspectratio]{resources/implementation/segmented_image}
+\centering
+\caption{A segmented image}
+\end{figure}
 
 \subsection{Morphological Image processing}
 Morphological image processing is a collection of non-linear operations related to the shape or morphology of features in an image. Morphological operations rely only on the relative ordering of
@@ -797,7 +835,7 @@ produces a new binary image
 \[g = f \oplus s \] 
 with ones in all locations (x,y) of a structuring element’s origin at which that structuring element s hits the the input image f, i.e. g(x,y) = 1 if s hits f and 0 otherwise, repeating f, i.e. g(x,y) = 1 if s hits f and 0 otherwise, repeating. \par
 The holes enclosed by a single region and gaps between different regions become smaller, and
-small intrusions into boundaries of a region are filled in. Figure 4.5 shows the effects of dilation on an input image.
+small intrusions into boundaries of a region are filled in. Fig. 17 shows the effects of dilation on an input image.
 
 \subsubsection{Erosion}
 The erosion of a binary image f by a structuring element s (denoted by $ f \ominus s $)
@@ -815,7 +853,19 @@ with s2 twice the size of s1, then
 %\[ f \ominus s2 \thickapprox (f \ominus s1) \ominus s1 \]
 Erosion removes small-scale details from a binary image but simultaneously reduces the size of regions of interest, too. By subtracting the eroded image from the original image, boundaries of each region can be found:
 \[ b = f - (f \ominus s) \]
-where f is an image of the regions, s is structuring element, and b is an image of the region boundaries. Figure 4.6 shows the effects of erosion on an input image.
+where f is an image of the regions, s is structuring element, and b is an image of the region boundaries. Fig. 18 shows the effects of erosion on an input image.
+
+\begin{figure}
+\includegraphics[width=3.0in,height=3.5in,clip,keepaspectratio]{resources/implementation/dilation}
+\centering
+\caption{Image before and after dilation}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=3.0in,height=3.5in,clip,keepaspectratio]{resources/implementation/erosion}
+\centering
+\caption{Image before and after erosion}
+\end{figure}
 
 \subsection{Symbol Recognition}
 The symbol recognition is the critical and most important step OCR systems. This step actually determines the performance of the overall project. Along with the symbol recognition, vertical translation has to be determined to get the output. To recognize the symbols, template matching is used. A template
@@ -840,18 +890,50 @@ The normalized correlation for two time series can be defined as
 The normalized quantity will vary between -1 and 1. A value of 1 indicates that at the alignment, the two time series have the exact shape (the amplitudes may be different) while a value -1 indicates that they have the same shape except that they have the opposite signs. A value of 0 shows that they are completely uncorrelated. In practice when one applies this normalization to real discrete signals, one will find that a correlation coefficient greater than about 0.7 or 0.8 indicates a pretty good match. \par
 
 The main advantage of the normalized cross correlation over the ordinary cross correlation is that it is less sensitive to linear changes in the amplitude of illumination in the two compared images. Furthermore, the Normalized Cross Correlation is confined in the range between –1 and 1. The setting of detection threshold value is much simpler than the cross correlation. There are several set of templates which are used to determine the symbols using the normalized
-cross correlation method. The database of symbols includes flat, sharp, rests, half note, whole note and quarter note as shown in Figures 4.7 to 4.11.
+cross correlation method. The database of symbols includes flat, sharp, rests, half note, whole note and quarter note as shown in Fig. 19 to Fig. 23.
 
 \subsubsection{Vertical Translation}
 Vertical Translation of a symbol is used to denote its pitch. It is also a crucial parameter in determining the actual symbol. Any error in this step will distort music. Hence it is one part of the recognition where error is intolerable. The position of staff lines in the score sheet is fixed. This principle is useful in finding out the vertical translation. After the normalized cross correlation, the (x,y) coordinate value of the centre pixel will be available. Comparing this with the standard value, the vertical translation can be easily obtained. Combining both the symbol and its vertical translation the perfect output is obtained. After this step finally the symbols will be ready for Music
 XML conversion and playback.
 
+\begin{figure}
+\includegraphics[width=1.5in,height=3.5in,clip,keepaspectratio]{resources/implementation/template_flat_sharp}
+\centering
+\caption{Templates of sharp and flat symbols}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=3.5in,height=3.5in,clip,keepaspectratio]{resources/implementation/template_rest}
+\centering
+\caption{Templates of rests}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=1.5in,height=1.5in,clip,keepaspectratio]{resources/implementation/template_half_note}
+\centering
+\caption{Templates of half notes}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=2.5in,height=1.5in,clip,keepaspectratio]{resources/implementation/template_quarter_note}
+\centering
+\caption{Template of quarter notes}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=1.5in,height=1.5in,clip,keepaspectratio]{resources/implementation/template_whole_note}
+\centering
+\caption{Template of whole note}
+\end{figure}
+
 \subsection{Symbol Interpretation}
 The recognized symbol needs to be interpreted to complete the recognition part. The interpretation part mainly depends on the clef that is used by the music instrument and also it needs to be combined with the vertical translation value to get the final result. When the input is normalized cross correlated with the template, the symbols corresponding to the template will be recognized. After
-this step the vertical translation is determined by using the bottom most staff line as a reference. But after this step the output that is produced will have similar symbols next to each other, hence there is a need to put it all together.
+this step the vertical translation is determined by using the bottom most staff line as a reference. But after this step the output that is produced will have similar symbols next to each other, hence there is a need to put it all together.	
+
+
 
 \subsection{Conversion to MusicXML}
-For converting the recognized symbols into xml file, the symbols are arranged according to their (x,y) coordinate values. A structure consisting of (x,y) coordinates, staff number, duration, stem, octave, step, voice and alter is created. The structure will be converted into table. The table is sorted and the XML file is generated. The structure for a half note with stem down is shown in Figure 4.12. Similarly the structure parameters vary for different notes. The output xml file defines each and every symbol present on the input music score sheet. This file can be played using MuseScore to generate the musical tone. 
+For converting the recognized symbols into xml file, the symbols are arranged according to their (x,y) coordinate values. A structure consisting of (x,y) coordinates, staff number, duration, stem, octave, step, voice and alter is created. The structure will be converted into table. The table is sorted and the XML file is generated. The structure for a half note with stem down is shown in Fig. 24. Similarly the structure parameters vary for different notes. The output xml file defines each and every symbol present on the input music score sheet. This file can be played using MuseScore to generate the musical tone. 
 The XML file generated consists of the following
 \subsubsection{Declaration}
 
@@ -892,12 +974,25 @@ The number attribute indicates the staff number if the part has more than one st
 \subsubsection{Stem}
 Stem direction is represented with the stem element, whose value can be up, down or none.
 
+\begin{figure}
+\includegraphics[width=3.5in,height=5.0in,clip,keepaspectratio]{resources/implementation/symbol_interpretation}
+\centering
+\caption{Structure for half note with stem down}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=3.5in,height=5.0in,clip,keepaspectratio]{resources/implementation/playback}
+\centering
+\caption{MuseScore interface}
+\end{figure}	
+
 \subsection{Playback}
 The playback feature is supported by using MuseScore software. The recognized symbols in
 the MusicXML format is imported to MuseScore and played. The recognized score can be seen
 in MuseScore and can be compared with the input score sheet for any errors. There are many
 features in MuseScore like tempo adjustment, equalizer, mixer and synthesizer for advanced play
-back options. The MuseScore interface is as shown in Figure 4.13
+back options. The MuseScore interface is as shown in Fig. 25.
+
 
 % if have a single appendix:
 %\appendix[Proof of the Zonklar Equations]
@@ -913,16 +1008,10 @@ back options. The MuseScore interface is as shown in Figure 4.13
 % starts a section numbered zero.)
 %
 
-
-\appendices
-\section{Proof of the First Zonklar Equation}
-Some text for the appendix.
-
 % use section* for acknowledgement
 \section*{Acknowledgment}
 
-
-The authors would like to thank...
+I would like to thank my team mates for their support and Prof. Nataraj C.R. for his valuable guidance without which the project would not have been possible.
 
 
 % Can use something like this to put references on a page
@@ -958,8 +1047,7 @@ The authors would like to thank...
 \begin{thebibliography}{1}
 
 \bibitem{IEEEhowto:kopka}
-H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
-  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+
 
 \end{thebibliography}
 
@@ -974,9 +1062,6 @@ H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
 %\begin{biography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{mshell}}]{Michael Shell}
 % or if you just want to reserve a space for a photo:
 
-\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{picture}}]{Kartik Bhargav}
-Top entrepreneur 
-\end{IEEEbiography}
 
 % You can push biographies down or up by placing
 % a \vfill before or after them. The appropriate
