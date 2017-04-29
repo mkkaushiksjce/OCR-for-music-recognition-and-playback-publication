@@ -783,16 +783,9 @@ image processing operations. Matlab has extensive support for image processing o
 This section presents the steps involved in converting the captured image of a score sheet into MusicXML file.
 
 
-{
-\begin{figure}
-\includegraphics[width=3in,height=3.5in,clip,keepaspectratio]{resources/flowchart/flowchart}
-\centering
-\caption{Flow chart for the steps involved conversion of image of score sheet to MusicXML file}
-\end{figure}
-}
-
 \subsection{Image Acquisition}
- The music score sheet image is acquired from MuseScore software. The file format used is ``png". A sample image of score sheet is shown in figure2 
+ The music score sheet image is acquired from MuseScore software. The file format used is ``png". A sample image of score sheet is shown in Fig. 14.
+ 
  
  \subsection{Image Preprocessing}
   The image acquired will be in rgb format and is converted into grey scale image. The purpose of converting an RGB image into gray scale is due to the fact that it eliminates the hue and saturation information, as they contribute very less for the total appearance of the image and retains the needed luminance (intensity).  The main advantages of image preprocessing are it helps in reducing the noise in images, Variations in illumination and viewing geometry between images (for optical sensors) can be corrected by image pre-processing techniques and helps to convert the image into a form that is more suitable for further
@@ -801,6 +794,30 @@ operations like morphological operations and feature extraction.
 \subsection{Image Segmentation}
 Image segmentation is the process of partitioning an image into parts or regions. This division into parts is often based on the characteristics of the pixels in the image. Thresholding method of segmenting method is used here to convert a grey scale image into binary image. This transformation is important because the morphological operations like dilation, erosion, etc. can be done efficiently on a binary image. Examples of a segmented image and a non-segmented image are shown in Figure 4.4 and Figure
 4.3. Figure 4.3 contains pixel values in the gray scale and each pixel can take any value out of the available 256 gray scale levels. As seen from figures 4.3 and 4.4, image segmentation converts the gray scale image into a binary image. 
+
+\begin{figure}
+\includegraphics[width=3in,height=3.5in,clip,keepaspectratio]{resources/flowchart/flowchart}
+\centering
+\caption{Flow chart for the steps involved conversion of image of score sheet to MusicXML file}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=3in,height=3.5in,clip,keepaspectratio]{resources/implementation/good_tone}
+\centering
+\caption{Music Score sheet image given as input}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=1in,height=1.5in,clip,keepaspectratio]{resources/implementation/non_segmented_image}
+\centering
+\caption{A non segmented image}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=1.0in,height=1.5in,clip,keepaspectratio]{resources/implementation/segmented_image}
+\centering
+\caption{A segmented image}
+\end{figure}
 
 \subsection{Morphological Image processing}
 Morphological image processing is a collection of non-linear operations related to the shape or morphology of features in an image. Morphological operations rely only on the relative ordering of
@@ -840,6 +857,18 @@ Erosion removes small-scale details from a binary image but simultaneously reduc
 \[ b = f - (f \ominus s) \]
 where f is an image of the regions, s is structuring element, and b is an image of the region boundaries. Figure 4.6 shows the effects of erosion on an input image.
 
+\begin{figure}
+\includegraphics[width=3.0in,height=3.5in,clip,keepaspectratio]{resources/implementation/dilation}
+\centering
+\caption{Image before and after dilation}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=3.0in,height=3.5in,clip,keepaspectratio]{resources/implementation/erosion}
+\centering
+\caption{Image before and after erosion}
+\end{figure}
+
 \subsection{Symbol Recognition}
 The symbol recognition is the critical and most important step OCR systems. This step actually determines the performance of the overall project. Along with the symbol recognition, vertical translation has to be determined to get the output. To recognize the symbols, template matching is used. A template
 is a small image (sub-image), the goal is to find occurrences of this template in a larger image. Template matching techniques compare portions of images against one another. Sample images are used to recognize similar objects in source image.\par
@@ -871,7 +900,7 @@ XML conversion and playback.
 
 \subsection{Symbol Interpretation}
 The recognized symbol needs to be interpreted to complete the recognition part. The interpretation part mainly depends on the clef that is used by the music instrument and also it needs to be combined with the vertical translation value to get the final result. When the input is normalized cross correlated with the template, the symbols corresponding to the template will be recognized. After
-this step the vertical translation is determined by using the bottom most staff line as a reference. But after this step the output that is produced will have similar symbols next to each other, hence there is a need to put it all together.
+this step the vertical translation is determined by using the bottom most staff line as a reference. But after this step the output that is produced will have similar symbols next to each other, hence there is a need to put it all together.	
 
 \subsection{Conversion to MusicXML}
 For converting the recognized symbols into xml file, the symbols are arranged according to their (x,y) coordinate values. A structure consisting of (x,y) coordinates, staff number, duration, stem, octave, step, voice and alter is created. The structure will be converted into table. The table is sorted and the XML file is generated. The structure for a half note with stem down is shown in Figure 4.12. Similarly the structure parameters vary for different notes. The output xml file defines each and every symbol present on the input music score sheet. This file can be played using MuseScore to generate the musical tone. 
@@ -915,12 +944,25 @@ The number attribute indicates the staff number if the part has more than one st
 \subsubsection{Stem}
 Stem direction is represented with the stem element, whose value can be up, down or none.
 
+\begin{figure}
+\includegraphics[width=3.5in,height=5.0in,clip,keepaspectratio]{resources/implementation/symbol_interpretation}
+\centering
+\caption{Structure for half note with stem down}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=3.5in,height=5.0in,clip,keepaspectratio]{resources/implementation/playback}
+\centering
+\caption{MuseScore interface}
+\end{figure}	
+
 \subsection{Playback}
 The playback feature is supported by using MuseScore software. The recognized symbols in
 the MusicXML format is imported to MuseScore and played. The recognized score can be seen
 in MuseScore and can be compared with the input score sheet for any errors. There are many
 features in MuseScore like tempo adjustment, equalizer, mixer and synthesizer for advanced play
 back options. The MuseScore interface is as shown in Figure 4.13
+
 
 % if have a single appendix:
 %\appendix[Proof of the Zonklar Equations]
@@ -936,16 +978,10 @@ back options. The MuseScore interface is as shown in Figure 4.13
 % starts a section numbered zero.)
 %
 
-
-\appendices
-\section{Proof of the First Zonklar Equation}
-Some text for the appendix.
-
 % use section* for acknowledgement
 \section*{Acknowledgment}
 
-
-The authors would like to thank...
+I would like to thank my team mates for their support and Prof. Nataraj C.R. for his valuable guidance without which the project would not have been possible.
 
 
 % Can use something like this to put references on a page
@@ -981,8 +1017,7 @@ The authors would like to thank...
 \begin{thebibliography}{1}
 
 \bibitem{IEEEhowto:kopka}
-H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
-  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+
 
 \end{thebibliography}
 
@@ -997,9 +1032,6 @@ H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
 %\begin{biography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{mshell}}]{Michael Shell}
 % or if you just want to reserve a space for a photo:
 
-\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{picture}}]{Kartik Bhargav}
-Top entrepreneur 
-\end{IEEEbiography}
 
 % You can push biographies down or up by placing
 % a \vfill before or after them. The appropriate
