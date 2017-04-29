@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.31)  28 APR 2017 22:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.31)  29 APR 2017 17:45
 entering extended mode
 **./main.tex
 (main.tex
@@ -292,6 +292,29 @@ File: resources/images/treble_cleff.png Graphic file (type png)
 Package pdftex.def Info: resources/images/treble_cleff.png used on input line 5
 83.
 (pdftex.def)             Requested size: 216.80746pt x 37.4271pt.
+
+<resources/images/rest.jpg, id=18, 212.29312pt x 152.06813pt>
+File: resources/images/rest.jpg Graphic file (type jpg)
+
+<use resources/images/rest.jpg>
+Package pdftex.def Info: resources/images/rest.jpg used on input line 589.
+(pdftex.def)             Requested size: 108.4041pt x 77.65117pt.
+
+<resources/images/time_signature_4_4.png, id=20, 128.48pt x 166.6225pt>
+File: resources/images/time_signature_4_4.png Graphic file (type png)
+
+<use resources/images/time_signature_4_4.png>
+Package pdftex.def Info: resources/images/time_signature_4_4.png used on input 
+line 595.
+(pdftex.def)             Requested size: 55.72758pt x 72.27171pt.
+
+<resources/images/key_signatures.jpg, id=22, 218.31563pt x 103.13531pt>
+File: resources/images/key_signatures.jpg Graphic file (type jpg)
+
+<use resources/images/key_signatures.jpg>
+Package pdftex.def Info: resources/images/key_signatures.jpg used on input line
+ 601.
+(pdftex.def)             Requested size: 216.80936pt x 102.4237pt.
  [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
@@ -303,17 +326,18 @@ Missing character: There is no ì in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ì in font ptmr7t!
-LaTeX Font Info:    Try loading font information for OML+ptm on input line 717.
+ [2 <./resources/images/note_types.jpg> <./resources/images/note_head_stem.jpg>
+ <./resources/images/stemp_up_notes.jpg> <./resources/images/stemp_down_notes.j
+pg> <./resources/images/treble_cleff.png (PNG copy)> <./resources/images/rest.j
+pg> <./resources/images/time_signature_4_4.png (PNG copy)> <./resources/images/
+key_signatures.jpg>]
+LaTeX Font Info:    Try loading font information for OML+ptm on input line 734.
 
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omlptm.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omlptm.fd"
 File: omlptm.fd 
 )
 LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 717.
- [2 <./resources/images/note_types.jpg> <./resources/images/note_head_stem.jpg>
- <./resources/images/stemp_up_notes.jpg> <./resources/images/stemp_down_notes.j
-pg> <./resources/images/treble_cleff.png (PNG copy)>]
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 734.
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ú in font ptmr7t!
@@ -330,17 +354,17 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
 
-<resources/flowchart/flowchart.png, id=40, 169.38281pt x 368.1253pt>
+<resources/flowchart/flowchart.png, id=48, 169.38281pt x 368.1253pt>
 File: resources/flowchart/flowchart.png Graphic file (type png)
 
 <use resources/flowchart/flowchart.png>
 Package pdftex.def Info: resources/flowchart/flowchart.png used on input line 7
-71.
+88.
 (pdftex.def)             Requested size: 116.38835pt x 252.95071pt.
+ [3 <./resources/flowchart/flowchart.png>]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
- [3 <./resources/flowchart/flowchart.png>]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
@@ -352,33 +376,33 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ì in font ptmr7t!
 LaTeX Font Info:    Font shape `OML/ptm/m/it' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 868.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 885.
+ [5]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
- [5]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 967.
+(Font)              <8> on input line 984.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 967.
- <picture.png, id=59, 84.315pt x 98.3675pt>
+(Font)              <6> on input line 984.
+ <picture.png, id=68, 84.315pt x 98.3675pt>
 File: picture.png Graphic file (type png)
  <use picture.png>
-Package pdftex.def Info: picture.png used on input line 983.
+Package pdftex.def Info: picture.png used on input line 1000.
 (pdftex.def)             Requested size: 72.27145pt x 84.3167pt.
 File: picture.png Graphic file (type png)
 
 <use picture.png>
-Package pdftex.def Info: picture.png used on input line 983.
+Package pdftex.def Info: picture.png used on input line 1000.
 (pdftex.def)             Requested size: 72.27145pt x 84.3167pt.
  [6
 
  <./picture.png>] (main.aux) ) 
 Here is how much of TeX's memory you used:
- 2425 strings out of 493333
- 39137 string characters out of 3139194
+ 2440 strings out of 493333
+ 39638 string characters out of 3139194
  104673 words of memory out of 3000000
- 5926 multiletter control sequences out of 15000+200000
+ 5938 multiletter control sequences out of 15000+200000
  43156 words of font info for 76 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
  39i,10n,37p,1194b,318s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -393,9 +417,9 @@ lic/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/ut
 mb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (6 pages, 240957 bytes).
+Output written on main.pdf (6 pages, 272524 bytes).
 PDF statistics:
- 102 PDF objects out of 1000 (max. 8388607)
+ 111 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 123 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 156 words of extra memory for PDF output out of 10000 (max. 10000000)
 
