@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.31)  29 APR 2017 19:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.31)  29 APR 2017 19:59
 entering extended mode
 **./main.tex
 (main.tex
@@ -429,7 +429,7 @@ File: resources/implementation/symbol_interpretation.jpg Graphic file (type jpg
 )
  <use resources/implementation/symbol_interpretation.jpg>
 Package pdftex.def Info: resources/implementation/symbol_interpretation.jpg use
-d on input line 955.
+d on input line 948.
 (pdftex.def)             Requested size: 252.94698pt x 129.92561pt.
 
 <resources/implementation/playback.jpg, id=85, 1028.34187pt x 560.0925pt>
@@ -437,49 +437,34 @@ File: resources/implementation/playback.jpg Graphic file (type jpg)
 
 <use resources/implementation/playback.jpg>
 Package pdftex.def Info: resources/implementation/playback.jpg used on input li
-ne 961.
+ne 954.
 (pdftex.def)             Requested size: 252.94235pt x 137.76654pt.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 1025.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 1025.
- [6 <./resources/implementation/symbol_interpretation.jpg>] <picture.png, id=91
-, 84.315pt x 98.3675pt>
-File: picture.png Graphic file (type png)
+ [6 <./resources/implementation/symbol_interpretation.jpg> <./resources/impleme
+ntation/playback.jpg>] [7
 
-<use picture.png>
-Package pdftex.def Info: picture.png used on input line 1041.
-(pdftex.def)             Requested size: 72.27145pt x 84.3167pt.
-File: picture.png Graphic file (type png)
- <use picture.png>
-Package pdftex.def Info: picture.png used on input line 1041.
-(pdftex.def)             Requested size: 72.27145pt x 84.3167pt.
- [7
-
- <./resources/implementation/playback.jpg> <./picture.png>] (main.aux) ) 
+] (main.aux) ) 
 Here is how much of TeX's memory you used:
- 2476 strings out of 493333
- 41071 string characters out of 3139194
+ 2454 strings out of 493333
+ 40832 string characters out of 3139194
  104673 words of memory out of 3000000
- 5966 multiletter control sequences out of 15000+200000
- 43156 words of font info for 76 fonts, out of 3000000 for 9000
+ 5953 multiletter control sequences out of 15000+200000
+ 37406 words of font info for 66 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
- 39i,10n,37p,1194b,318s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Pro
-gram Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
-7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw
-/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pf
-b>
-Output written on main.pdf (7 pages, 579754 bytes).
+ 39i,7n,25p,1194b,216s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/urw/times/utmri8a.pfb>
+Output written on main.pdf (7 pages, 558538 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
+ 132 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 233 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 216 words of extra memory for PDF output out of 10000 (max. 10000000)
 
