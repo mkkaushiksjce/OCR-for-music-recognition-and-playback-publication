@@ -792,8 +792,7 @@ This section presents the steps involved in converting the captured image of a s
 operations like morphological operations and feature extraction.
 
 \subsection{Image Segmentation}
-Image segmentation is the process of partitioning an image into parts or regions. This division into parts is often based on the characteristics of the pixels in the image. Thresholding method of segmenting method is used here to convert a grey scale image into binary image. This transformation is important because the morphological operations like dilation, erosion, etc. can be done efficiently on a binary image. Examples of a segmented image and a non-segmented image are shown in Figure 4.4 and Figure
-4.3. Figure 4.3 contains pixel values in the gray scale and each pixel can take any value out of the available 256 gray scale levels. As seen from figures 4.3 and 4.4, image segmentation converts the gray scale image into a binary image. 
+Image segmentation is the process of partitioning an image into parts or regions. This division into parts is often based on the characteristics of the pixels in the image. Thresholding method of segmenting method is used here to convert a grey scale image into binary image. This transformation is important because the morphological operations like dilation, erosion, etc. can be done efficiently on a binary image. Examples of a segmented image and a non-segmented image are shown in Fig. 15 and Fig. 16. Fig. 16 contains pixel values in the gray scale and each pixel can take any value out of the available 256 gray scale levels. As seen from figures 4.3 and 4.4, image segmentation converts the gray scale image into a binary image. 
 
 \begin{figure}
 \includegraphics[width=3in,height=3.5in,clip,keepaspectratio]{resources/flowchart/flowchart}
@@ -837,7 +836,7 @@ produces a new binary image
 \[g = f \oplus s \] 
 with ones in all locations (x,y) of a structuring element’s origin at which that structuring element s hits the the input image f, i.e. g(x,y) = 1 if s hits f and 0 otherwise, repeating f, i.e. g(x,y) = 1 if s hits f and 0 otherwise, repeating. \par
 The holes enclosed by a single region and gaps between different regions become smaller, and
-small intrusions into boundaries of a region are filled in. Figure 4.5 shows the effects of dilation on an input image.
+small intrusions into boundaries of a region are filled in. Fig. 17 shows the effects of dilation on an input image.
 
 \subsubsection{Erosion}
 The erosion of a binary image f by a structuring element s (denoted by $ f \ominus s $)
@@ -855,7 +854,7 @@ with s2 twice the size of s1, then
 %\[ f \ominus s2 \thickapprox (f \ominus s1) \ominus s1 \]
 Erosion removes small-scale details from a binary image but simultaneously reduces the size of regions of interest, too. By subtracting the eroded image from the original image, boundaries of each region can be found:
 \[ b = f - (f \ominus s) \]
-where f is an image of the regions, s is structuring element, and b is an image of the region boundaries. Figure 4.6 shows the effects of erosion on an input image.
+where f is an image of the regions, s is structuring element, and b is an image of the region boundaries. Fig. 18 shows the effects of erosion on an input image.
 
 \begin{figure}
 \includegraphics[width=3.0in,height=3.5in,clip,keepaspectratio]{resources/implementation/dilation}
@@ -892,18 +891,50 @@ The normalized correlation for two time series can be defined as
 The normalized quantity will vary between -1 and 1. A value of 1 indicates that at the alignment, the two time series have the exact shape (the amplitudes may be different) while a value -1 indicates that they have the same shape except that they have the opposite signs. A value of 0 shows that they are completely uncorrelated. In practice when one applies this normalization to real discrete signals, one will find that a correlation coefficient greater than about 0.7 or 0.8 indicates a pretty good match. \par
 
 The main advantage of the normalized cross correlation over the ordinary cross correlation is that it is less sensitive to linear changes in the amplitude of illumination in the two compared images. Furthermore, the Normalized Cross Correlation is confined in the range between –1 and 1. The setting of detection threshold value is much simpler than the cross correlation. There are several set of templates which are used to determine the symbols using the normalized
-cross correlation method. The database of symbols includes flat, sharp, rests, half note, whole note and quarter note as shown in Figures 4.7 to 4.11.
+cross correlation method. The database of symbols includes flat, sharp, rests, half note, whole note and quarter note as shown in Fig. 19 to Fig. 23.
 
 \subsubsection{Vertical Translation}
 Vertical Translation of a symbol is used to denote its pitch. It is also a crucial parameter in determining the actual symbol. Any error in this step will distort music. Hence it is one part of the recognition where error is intolerable. The position of staff lines in the score sheet is fixed. This principle is useful in finding out the vertical translation. After the normalized cross correlation, the (x,y) coordinate value of the centre pixel will be available. Comparing this with the standard value, the vertical translation can be easily obtained. Combining both the symbol and its vertical translation the perfect output is obtained. After this step finally the symbols will be ready for Music
 XML conversion and playback.
 
+\begin{figure}
+\includegraphics[width=1.5in,height=3.5in,clip,keepaspectratio]{resources/implementation/template_flat_sharp}
+\centering
+\caption{Templates of sharp and flat symbols}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=3.5in,height=3.5in,clip,keepaspectratio]{resources/implementation/template_rest}
+\centering
+\caption{Templates of rests}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=1.5in,height=1.5in,clip,keepaspectratio]{resources/implementation/template_half_note}
+\centering
+\caption{Templates of half notes}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=2.5in,height=1.5in,clip,keepaspectratio]{resources/implementation/template_quarter_note}
+\centering
+\caption{Template of quarter notes}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=1.5in,height=1.5in,clip,keepaspectratio]{resources/implementation/template_whole_note}
+\centering
+\caption{Template of whole note}
+\end{figure}
+
 \subsection{Symbol Interpretation}
 The recognized symbol needs to be interpreted to complete the recognition part. The interpretation part mainly depends on the clef that is used by the music instrument and also it needs to be combined with the vertical translation value to get the final result. When the input is normalized cross correlated with the template, the symbols corresponding to the template will be recognized. After
 this step the vertical translation is determined by using the bottom most staff line as a reference. But after this step the output that is produced will have similar symbols next to each other, hence there is a need to put it all together.	
 
+
+
 \subsection{Conversion to MusicXML}
-For converting the recognized symbols into xml file, the symbols are arranged according to their (x,y) coordinate values. A structure consisting of (x,y) coordinates, staff number, duration, stem, octave, step, voice and alter is created. The structure will be converted into table. The table is sorted and the XML file is generated. The structure for a half note with stem down is shown in Figure 4.12. Similarly the structure parameters vary for different notes. The output xml file defines each and every symbol present on the input music score sheet. This file can be played using MuseScore to generate the musical tone. 
+For converting the recognized symbols into xml file, the symbols are arranged according to their (x,y) coordinate values. A structure consisting of (x,y) coordinates, staff number, duration, stem, octave, step, voice and alter is created. The structure will be converted into table. The table is sorted and the XML file is generated. The structure for a half note with stem down is shown in Fig. 24. Similarly the structure parameters vary for different notes. The output xml file defines each and every symbol present on the input music score sheet. This file can be played using MuseScore to generate the musical tone. 
 The XML file generated consists of the following
 \subsubsection{Declaration}
 
@@ -961,7 +992,7 @@ The playback feature is supported by using MuseScore software. The recognized sy
 the MusicXML format is imported to MuseScore and played. The recognized score can be seen
 in MuseScore and can be compared with the input score sheet for any errors. There are many
 features in MuseScore like tempo adjustment, equalizer, mixer and synthesizer for advanced play
-back options. The MuseScore interface is as shown in Figure 4.13
+back options. The MuseScore interface is as shown in Fig. 25.
 
 
 % if have a single appendix:
