@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.31)  29 APR 2017 21:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.31)  4 MAY 2017 17:34
 entering extended mode
 **./main.tex
 (main.tex
@@ -146,23 +146,29 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 ))
 \Gin@req@height=\dimen117
 \Gin@req@width=\dimen118
-) (main.aux)
+) (main.aux
+
+LaTeX Warning: Label `IEEEhowto:bainbridgei' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:bainbridgei' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 385.
-LaTeX Font Info:    ... okay on input line 385.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 385.
-LaTeX Font Info:    ... okay on input line 385.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 385.
-LaTeX Font Info:    ... okay on input line 385.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 385.
-LaTeX Font Info:    ... okay on input line 385.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 385.
-LaTeX Font Info:    ... okay on input line 385.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 385.
-LaTeX Font Info:    ... okay on input line 385.
-
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 384.
+LaTeX Font Info:    ... okay on input line 384.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 384.
+LaTeX Font Info:    ... okay on input line 384.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 384.
+LaTeX Font Info:    ... okay on input line 384.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 384.
+LaTeX Font Info:    ... okay on input line 384.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 384.
+LaTeX Font Info:    ... okay on input line 384.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 384.
+LaTeX Font Info:    ... okay on input line 384.
+ ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count110
 \scratchdimen=\dimen119
@@ -224,7 +230,7 @@ G,.JBIG2,.JB2,.eps]
 File: resources/images/staff_line.png Graphic file (type png)
 
 <use resources/images/staff_line.png>
-Package pdftex.def Info: resources/images/staff_line.png used on input line 515
+Package pdftex.def Info: resources/images/staff_line.png used on input line 513
 .
 (pdftex.def)             Requested size: 216.80244pt x 26.59657pt.
 
@@ -233,111 +239,105 @@ File: resources/images/measure_lines.png Graphic file (type png)
 
 <use resources/images/measure_lines.png>
 Package pdftex.def Info: resources/images/measure_lines.png used on input line 
-521.
-(pdftex.def)             Requested size: 216.81387pt x 39.5828pt.
-File: resources/images/measure_lines.png Graphic file (type png)
-
-<use resources/images/measure_lines.png>
-Package pdftex.def Info: resources/images/measure_lines.png used on input line 
-527.
+519.
 (pdftex.def)             Requested size: 216.81387pt x 39.5828pt.
 
-<resources/images/notes.jpg, id=6, 360.59718pt x 59.47218pt>
+<resources/images/notes.jpg, id=5, 360.59718pt x 59.47218pt>
 File: resources/images/notes.jpg Graphic file (type jpg)
 
 <use resources/images/notes.jpg>
-Package pdftex.def Info: resources/images/notes.jpg used on input line 533.
+Package pdftex.def Info: resources/images/notes.jpg used on input line 526.
 (pdftex.def)             Requested size: 216.81116pt x 35.75798pt.
 
-<resources/images/note_types.jpg, id=8, 212.29312pt x 150.5625pt>
+<resources/images/note_types.jpg, id=7, 212.29312pt x 150.5625pt>
 File: resources/images/note_types.jpg Graphic file (type jpg)
 
 <use resources/images/note_types.jpg>
-Package pdftex.def Info: resources/images/note_types.jpg used on input line 539
+Package pdftex.def Info: resources/images/note_types.jpg used on input line 532
 .
 (pdftex.def)             Requested size: 108.4041pt x 76.88234pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 547.
+(Font)              <7> on input line 540.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 547.
-
-<resources/images/note_head_stem.jpg, id=10, 348.55219pt x 149.8097pt>
-File: resources/images/note_head_stem.jpg Graphic file (type jpg)
-
-<use resources/images/note_head_stem.jpg>
-Package pdftex.def Info: resources/images/note_head_stem.jpg used on input line
- 565.
-(pdftex.def)             Requested size: 216.80746pt x 93.18506pt.
-
-<resources/images/stemp_up_notes.jpg, id=12, 253.69781pt x 57.21375pt>
-File: resources/images/stemp_up_notes.jpg Graphic file (type jpg)
-
-<use resources/images/stemp_up_notes.jpg>
-Package pdftex.def Info: resources/images/stemp_up_notes.jpg used on input line
- 571.
-(pdftex.def)             Requested size: 216.8171pt x 48.89642pt.
-
-<resources/images/stemp_down_notes.jpg, id=14, 240.9pt x 54.2025pt>
-File: resources/images/stemp_down_notes.jpg Graphic file (type jpg)
-
-<use resources/images/stemp_down_notes.jpg>
-Package pdftex.def Info: resources/images/stemp_down_notes.jpg used on input li
-ne 577.
-(pdftex.def)             Requested size: 216.81534pt x 48.78345pt.
-
-<resources/images/treble_cleff.png, id=16, 645.41125pt x 111.41624pt>
-File: resources/images/treble_cleff.png Graphic file (type png)
-
-<use resources/images/treble_cleff.png>
-Package pdftex.def Info: resources/images/treble_cleff.png used on input line 5
-83.
-(pdftex.def)             Requested size: 216.80746pt x 37.4271pt.
-
-<resources/images/rest.jpg, id=18, 212.29312pt x 152.06813pt>
-File: resources/images/rest.jpg Graphic file (type jpg)
-
-<use resources/images/rest.jpg>
-Package pdftex.def Info: resources/images/rest.jpg used on input line 589.
-(pdftex.def)             Requested size: 108.4041pt x 77.65117pt.
-
-<resources/images/time_signature_4_4.png, id=20, 128.48pt x 166.6225pt>
-File: resources/images/time_signature_4_4.png Graphic file (type png)
-
-<use resources/images/time_signature_4_4.png>
-Package pdftex.def Info: resources/images/time_signature_4_4.png used on input 
-line 595.
-(pdftex.def)             Requested size: 55.72758pt x 72.27171pt.
-
-<resources/images/key_signatures.jpg, id=22, 218.31563pt x 103.13531pt>
-File: resources/images/key_signatures.jpg Graphic file (type jpg)
-
-<use resources/images/key_signatures.jpg>
-Package pdftex.def Info: resources/images/key_signatures.jpg used on input line
- 601.
-(pdftex.def)             Requested size: 216.80936pt x 102.4237pt.
+(Font)              <5> on input line 540.
  [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
  <./resources/images/staff_line.png (PNG copy)> <./resources/images/measure_lin
-es.png (PNG copy)> <./resources/images/notes.jpg>]
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ì in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ì in font ptmr7t!
- [2 <./resources/images/note_types.jpg> <./resources/images/note_head_stem.jpg>
- <./resources/images/stemp_up_notes.jpg> <./resources/images/stemp_down_notes.j
-pg> <./resources/images/treble_cleff.png (PNG copy)> <./resources/images/rest.j
-pg> <./resources/images/time_signature_4_4.png (PNG copy)> <./resources/images/
-key_signatures.jpg>]
-LaTeX Font Info:    Try loading font information for OML+ptm on input line 734.
+es.png (PNG copy)> <./resources/images/notes.jpg> <./resources/images/note_type
+s.jpg>]
+<resources/images/note_head_stem.jpg, id=22, 348.55219pt x 149.8097pt>
+File: resources/images/note_head_stem.jpg Graphic file (type jpg)
 
- ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omlptm.fd"
+<use resources/images/note_head_stem.jpg>
+Package pdftex.def Info: resources/images/note_head_stem.jpg used on input line
+ 558.
+(pdftex.def)             Requested size: 216.80746pt x 93.18506pt.
+
+<resources/images/stemp_up_notes.jpg, id=24, 253.69781pt x 57.21375pt>
+File: resources/images/stemp_up_notes.jpg Graphic file (type jpg)
+
+<use resources/images/stemp_up_notes.jpg>
+Package pdftex.def Info: resources/images/stemp_up_notes.jpg used on input line
+ 564.
+(pdftex.def)             Requested size: 216.8171pt x 48.89642pt.
+
+<resources/images/stemp_down_notes.jpg, id=26, 240.9pt x 54.2025pt>
+File: resources/images/stemp_down_notes.jpg Graphic file (type jpg)
+
+<use resources/images/stemp_down_notes.jpg>
+Package pdftex.def Info: resources/images/stemp_down_notes.jpg used on input li
+ne 570.
+(pdftex.def)             Requested size: 216.81534pt x 48.78345pt.
+
+<resources/images/treble_cleff.png, id=28, 645.41125pt x 111.41624pt>
+File: resources/images/treble_cleff.png Graphic file (type png)
+
+<use resources/images/treble_cleff.png>
+Package pdftex.def Info: resources/images/treble_cleff.png used on input line 5
+76.
+(pdftex.def)             Requested size: 216.80746pt x 37.4271pt.
+
+<resources/images/rest.jpg, id=30, 212.29312pt x 152.06813pt>
+File: resources/images/rest.jpg Graphic file (type jpg)
+
+<use resources/images/rest.jpg>
+Package pdftex.def Info: resources/images/rest.jpg used on input line 582.
+(pdftex.def)             Requested size: 108.4041pt x 77.65117pt.
+
+<resources/images/time_signature_4_4.png, id=32, 128.48pt x 166.6225pt>
+File: resources/images/time_signature_4_4.png Graphic file (type png)
+
+<use resources/images/time_signature_4_4.png>
+Package pdftex.def Info: resources/images/time_signature_4_4.png used on input 
+line 588.
+(pdftex.def)             Requested size: 55.72758pt x 72.27171pt.
+
+<resources/images/key_signatures.jpg, id=34, 218.31563pt x 103.13531pt>
+File: resources/images/key_signatures.jpg Graphic file (type jpg)
+
+<use resources/images/key_signatures.jpg>
+Package pdftex.def Info: resources/images/key_signatures.jpg used on input line
+ 594.
+(pdftex.def)             Requested size: 216.80936pt x 102.4237pt.
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+ [2 <./resources/images/note_head_stem.jpg> <./resources/images/stemp_up_notes.
+jpg> <./resources/images/stemp_down_notes.jpg> <./resources/images/treble_cleff
+.png (PNG copy)> <./resources/images/rest.jpg> <./resources/images/time_signatu
+re_4_4.png (PNG copy)> <./resources/images/key_signatures.jpg>]
+LaTeX Font Info:    Try loading font information for OML+ptm on input line 727.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omlptm.fd"
 File: omlptm.fd 
 )
 LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 734.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 727.
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ú in font ptmr7t!
@@ -353,115 +353,110 @@ Missing character: There is no ú in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
- [3]
-<resources/flowchart/flowchart.png, id=52, 169.38281pt x 368.1253pt>
+
+<resources/flowchart/flowchart.png, id=46, 169.38281pt x 368.1253pt>
 File: resources/flowchart/flowchart.png Graphic file (type png)
 
 <use resources/flowchart/flowchart.png>
 Package pdftex.def Info: resources/flowchart/flowchart.png used on input line 7
-98.
+91.
 (pdftex.def)             Requested size: 116.38835pt x 252.95071pt.
 
-<resources/implementation/good_tone.png, id=55, 630.355pt x 314.17375pt>
+<resources/implementation/good_tone.png, id=49, 630.355pt x 314.17375pt>
 File: resources/implementation/good_tone.png Graphic file (type png)
 
 <use resources/implementation/good_tone.png>
 Package pdftex.def Info: resources/implementation/good_tone.png used on input l
-ine 804.
+ine 797.
 (pdftex.def)             Requested size: 216.80904pt x 108.05927pt.
 
-<resources/implementation/non_segmented_image.png, id=57, 232.87pt x 230.8625pt
+<resources/implementation/non_segmented_image.png, id=51, 232.87pt x 230.8625pt
 >
 File: resources/implementation/non_segmented_image.png Graphic file (type png)
  <use resources/implementation/non_segmented_image.png>
 Package pdftex.def Info: resources/implementation/non_segmented_image.png used 
-on input line 810.
+on input line 803.
 (pdftex.def)             Requested size: 72.27068pt x 71.64764pt.
 
-<resources/implementation/segmented_image.png, id=59, 272.01625pt x 248.93pt>
+<resources/implementation/segmented_image.png, id=53, 272.01625pt x 248.93pt>
 File: resources/implementation/segmented_image.png Graphic file (type png)
 
 <use resources/implementation/segmented_image.png>
 Package pdftex.def Info: resources/implementation/segmented_image.png used on i
-nput line 816.
+nput line 809.
 (pdftex.def)             Requested size: 72.27074pt x 66.13705pt.
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ô in font ptmr7t!
+ [3]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
  [4 <./resources/flowchart/flowchart.png> <./resources/implementation/good_tone
 .png (PNG copy)> <./resources/implementation/non_segmented_image.png (PNG copy)
 > <./resources/implementation/segmented_image.png (PNG copy)>]
-<resources/implementation/dilation.jpg, id=70, 407.27156pt x 165.61874pt>
+<resources/implementation/dilation.jpg, id=68, 407.27156pt x 165.61874pt>
 File: resources/implementation/dilation.jpg Graphic file (type jpg)
 
 <use resources/implementation/dilation.jpg>
 Package pdftex.def Info: resources/implementation/dilation.jpg used on input li
-ne 860.
+ne 853.
 (pdftex.def)             Requested size: 216.80992pt x 88.16669pt.
 
-<resources/implementation/erosion.jpg, id=72, 407.27156pt x 166.37157pt>
+<resources/implementation/erosion.jpg, id=70, 407.27156pt x 166.37157pt>
 File: resources/implementation/erosion.jpg Graphic file (type jpg)
 
 <use resources/implementation/erosion.jpg>
 Package pdftex.def Info: resources/implementation/erosion.jpg used on input lin
-e 866.
+e 859.
 (pdftex.def)             Requested size: 216.80992pt x 88.56744pt.
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ì in font ptmr7t!
  [5 <./resources/implementation/dilation.jpg> <./resources/implementation/erosi
 on.jpg>]
-<resources/implementation/template_flat_sharp.png, id=83, 190.7125pt x 141.5287
+<resources/implementation/template_flat_sharp.png, id=81, 190.7125pt x 141.5287
 5pt>
 File: resources/implementation/template_flat_sharp.png Graphic file (type png)
  <use resources/implementation/template_flat_sharp.png>
 Package pdftex.def Info: resources/implementation/template_flat_sharp.png used 
-on input line 901.
+on input line 894.
 (pdftex.def)             Requested size: 108.4046pt x 80.44762pt.
 
-<resources/implementation/template_rest.png, id=85, 387.4475pt x 165.61874pt>
+<resources/implementation/template_rest.png, id=83, 387.4475pt x 165.61874pt>
 File: resources/implementation/template_rest.png Graphic file (type png)
 
 <use resources/implementation/template_rest.png>
 Package pdftex.def Info: resources/implementation/template_rest.png used on inp
-ut line 907.
+ut line 900.
 (pdftex.def)             Requested size: 252.94934pt x 108.12599pt.
 
-<resources/implementation/template_half_note.png, id=87, 276.03125pt x 193.7237
+<resources/implementation/template_half_note.png, id=85, 276.03125pt x 193.7237
 5pt>
 File: resources/implementation/template_half_note.png Graphic file (type png)
  <use resources/implementation/template_half_note.png>
 Package pdftex.def Info: resources/implementation/template_half_note.png used o
-n input line 913.
+n input line 906.
 (pdftex.def)             Requested size: 108.40567pt x 76.08107pt.
 
-<resources/implementation/template_quarter_note.png, id=89, 366.36874pt x 190.7
+<resources/implementation/template_quarter_note.png, id=87, 366.36874pt x 190.7
 125pt>
 File: resources/implementation/template_quarter_note.png Graphic file (type png
 )
  <use resources/implementation/template_quarter_note.png>
 Package pdftex.def Info: resources/implementation/template_quarter_note.png use
-d on input line 919.
+d on input line 912.
 (pdftex.def)             Requested size: 180.67386pt x 94.0494pt.
 
-<resources/implementation/template_whole_note.png, id=91, 138.5175pt x 113.4237
+<resources/implementation/template_whole_note.png, id=89, 138.5175pt x 113.4237
 5pt>
 File: resources/implementation/template_whole_note.png Graphic file (type png)
  <use resources/implementation/template_whole_note.png>
 Package pdftex.def Info: resources/implementation/template_whole_note.png used 
-on input line 925.
+on input line 918.
 (pdftex.def)             Requested size: 108.40463pt x 88.7661pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 LaTeX Font Info:    Font shape `OML/ptm/m/it' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 945.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 938.
  [6 <./resources/implementation/template_flat_sharp.png (PNG copy)> <./resource
 s/implementation/template_rest.png (PNG copy)> <./resources/implementation/temp
 late_half_note.png (PNG copy)> <./resources/implementation/template_quarter_not
@@ -471,46 +466,150 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
 
-<resources/implementation/symbol_interpretation.jpg, id=101, 303.38344pt x 155.
-83218pt>
+<resources/implementation/symbol_interpretation.jpg, id=99, 303.38344pt x 155.8
+3218pt>
 File: resources/implementation/symbol_interpretation.jpg Graphic file (type jpg
 )
  <use resources/implementation/symbol_interpretation.jpg>
 Package pdftex.def Info: resources/implementation/symbol_interpretation.jpg use
-d on input line 979.
+d on input line 972.
 (pdftex.def)             Requested size: 252.94698pt x 129.92561pt.
 
-<resources/implementation/playback.jpg, id=103, 1028.34187pt x 560.0925pt>
+<resources/implementation/playback.jpg, id=101, 1028.34187pt x 560.0925pt>
 File: resources/implementation/playback.jpg Graphic file (type jpg)
 
 <use resources/implementation/playback.jpg>
 Package pdftex.def Info: resources/implementation/playback.jpg used on input li
-ne 985.
+ne 978.
 (pdftex.def)             Requested size: 252.94235pt x 137.76654pt.
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+
+<resources/results/good_tone.png, id=103, 630.355pt x 314.17375pt>
+File: resources/results/good_tone.png Graphic file (type png)
+
+<use resources/results/good_tone.png>
+Package pdftex.def Info: resources/results/good_tone.png used on input line 994
+.
+(pdftex.def)             Requested size: 252.94548pt x 126.06995pt.
+
+<resources/results/good_tone_staff_removed.png, id=105, 630.355pt x 339.2675pt>
+File: resources/results/good_tone_staff_removed.png Graphic file (type png)
+<use resources/results/good_tone_staff_removed.png>
+Package pdftex.def Info: resources/results/good_tone_staff_removed.png used on 
+input line 1000.
+(pdftex.def)             Requested size: 252.94548pt x 136.13943pt.
+
+<resources/results/normalized_cross_correlation.png, id=107, 630.355pt x 335.25
+25pt>
+File: resources/results/normalized_cross_correlation.png Graphic file (type png
+)
+ <use resources/results/normalized_cross_correlation.png>
+Package pdftex.def Info: resources/results/normalized_cross_correlation.png use
+d on input line 1006.
+(pdftex.def)             Requested size: 252.94548pt x 134.52832pt.
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ò in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ò in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+
+<resources/results/matched_symbols.png, id=109, 630.355pt x 169.63374pt>
+File: resources/results/matched_symbols.png Graphic file (type png)
+
+<use resources/results/matched_symbols.png>
+Package pdftex.def Info: resources/results/matched_symbols.png used on input li
+ne 1012.
+(pdftex.def)             Requested size: 252.94548pt x 68.0697pt.
+
+<resources/results/symbol_table.png, id=111, 630.355pt x 425.59pt>
+File: resources/results/symbol_table.png Graphic file (type png)
+
+<use resources/results/symbol_table.png>
+Package pdftex.def Info: resources/results/symbol_table.png used on input line 
+1018.
+(pdftex.def)             Requested size: 252.94548pt x 170.77847pt.
+
+<resources/results/airtel.png, id=113, 630.355pt x 194.7275pt>
+File: resources/results/airtel.png Graphic file (type png)
+
+<use resources/results/airtel.png>
+Package pdftex.def Info: resources/results/airtel.png used on input line 1024.
+(pdftex.def)             Requested size: 252.94548pt x 78.13919pt.
+
+<resources/results/airtel_staff_line_removed.png, id=115, 630.355pt x 232.87pt>
+File: resources/results/airtel_staff_line_removed.png Graphic file (type png)
+<use resources/results/airtel_staff_line_removed.png>
+Package pdftex.def Info: resources/results/airtel_staff_line_removed.png used o
+n input line 1030.
+(pdftex.def)             Requested size: 252.94548pt x 93.44481pt.
  [7 <./resources/implementation/symbol_interpretation.jpg> <./resources/impleme
-ntation/playback.jpg>] (main.aux) ) 
+ntation/playback.jpg> <./resources/results/good_tone.png (PNG copy)> <./resourc
+es/results/good_tone_staff_removed.png (PNG copy)>]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 1091
+.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/it' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1091.
+
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no À in font ptmr7t!
+Missing character: There is no á in font ptmr7t!
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ¥ in font ptmr7t!
+Missing character: There is no ƒ in font ptmr7t!
+Missing character: There is no ± in font ptmr7t!
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ¥ in font ptmr7t!
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ¥ in font ptmr7t!
+ [8 <./resources/results/normalized_cross_correlation.png (PNG copy)> <./resour
+ces/results/matched_symbols.png (PNG copy)> <./resources/results/symbol_table.p
+ng (PNG copy)> <./resources/results/airtel.png (PNG copy)> <./resources/results
+/airtel_staff_line_removed.png (PNG copy)>] (main.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2479 strings out of 493333
- 41977 string characters out of 3139194
- 104673 words of memory out of 3000000
- 5973 multiletter control sequences out of 15000+200000
- 37406 words of font info for 66 fonts, out of 3000000 for 9000
+ 2542 strings out of 493333
+ 43825 string characters out of 3139194
+ 107734 words of memory out of 3000000
+ 6024 multiletter control sequences out of 15000+200000
+ 38798 words of font info for 68 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
- 39i,7n,25p,1194b,216s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips
-/base/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/tim
-es/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (7 pages, 647827 bytes).
+ 39i,8n,25p,1194b,257s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
+10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw
+/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pf
+b>
+Output written on main.pdf (8 pages, 1088224 bytes).
 PDF statistics:
- 147 PDF objects out of 1000 (max. 8388607)
+ 173 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 271 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 342 words of extra memory for PDF output out of 10000 (max. 10000000)
 
