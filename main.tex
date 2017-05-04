@@ -492,8 +492,7 @@ OCR, MusicXML, Cam Scanner, Template matching, Normalized cross correlation, Mat
 
 
 \section{Introduction}
-
-\subsection{Subsection Heading Here}
+Here goes the introduction
 
 \section{Overview of Sheet Music}
 % Intro text here
@@ -522,11 +521,6 @@ bar lines, double bar lines and measures are shown in Fig. 2.
 \caption{Staff with measures marked}
 \end{figure}
 
-\begin{figure}
-\includegraphics[width=3in,height=3.5in,clip,keepaspectratio]{resources/images/measure_lines}
-\centering
-\caption{Staff with measures marked}
-\end{figure}
 
 \begin{figure}
 \includegraphics[width=3in,height=3.5in,clip,keepaspectratio]{resources/images/notes}
@@ -558,7 +552,7 @@ and quarter note. Note lengths and symbols are as shown in the Fig. 4.
 \subsubsection{Note head and stem}
 Note head is the round part. The position of the note head gives the
 pitch. The stem is the part that sticks up or down from the head.Whole notes do not have
-stems. Quarter notes and half notes have stems. Refer to Fig. 6 .The stem can go either up or down. When a note is on the third line of the staff or below, stems grow up from the right side of the staff head. Refer to Fig. 7 .If the notes are on the third line or below, the stems go down on the left side. Refer to Fig. 8.
+stems. Quarter notes and half notes have stems. Refer to Fig. 5 .The stem can go either up or down. When a note is on the third line of the staff or below, stems grow up from the right side of the staff head. Refer to Fig. 6 .If the notes are on the third line or below, the stems go down on the left side. Refer to Fig. 7.
 
 \begin{figure}
 \includegraphics[width=3in,height=3.5in,clip,keepaspectratio]{resources/images/note_head_stem}
@@ -609,24 +603,24 @@ The music alphabet uses A,B,C,D,E,F and G. The notes are named alphabetically wh
 A clef is a symbol used at the beginning of a musical staff to tell the reader which letter name
 goes with which line or space. The treble clef is the most common. It is also called as G clef as it
 shows where the note G is on the staff. The inner loop of the treble clef circles the second line of
-staff. Refer to Fig. 9.
+staff. Refer to Fig. 8.
 
 \subsubsection{Rests}
 Rests define the silence in music. Depending on the duration of rest there are different types of
-rests. They are shown in Fig. 10.
+rests. They are shown in Fig. 9.
 
 \subsubsection{Time Signature}
 It appears at the beginning of every piece of music score. It gives the information of how many
 beats are in each measure.
 4/4 time :
-This time signature is used to indicate that there will be 4 beats in each measure. Refer to Fig. 11.
+This time signature is used to indicate that there will be 4 beats in each measure. Refer to Fig. 10.
 
 
 \subsubsection{Key Signatures}
 The key signature fits between the clef and the time signature. A key signature tells which notes
 have flats or sharps for an entire piece of music. Key signature are produced from the combinations
 of flats and sharps. There are 15 key signatures common to all the instruments and are shown in
-Fig. 12. The symbols of the music sheet described in this chapter are the symbols that have been recognized by the implemented Optical Character Recognition for Music notes and playback system.
+Fig. 11. The symbols of the music sheet described in this chapter are the symbols that have been recognized by the implemented Optical Character Recognition for Music notes and playback system.
 
 
 
@@ -779,11 +773,11 @@ standalone are optional attributes.
 image processing operations. Matlab has extensive support for image processing operations through “Image Processing Toolbox". Matlab also has “Data and File Management Toolbox” which can be used to read, write and generate XML files. MusicXML being one of the types of XML file, the toolbox will be able to handle it's basic operations also. Hence Matlab becomes a good choice for implementation. Matlab version R2014a - 8.3.0.532 has been used for the implementation of the algorithm. For reading MusicXML files “MuseScore” can be used. MuseScore is a free and opensource score writer software with rich features.
 
 \section{Implementation}
-This section presents the steps involved in converting the captured image of a score sheet into MusicXML file.
+This section presents the steps involved in converting the captured image of a score sheet into MusicXML file. Fig. 12 provides the graphical representation of sequence of operations involved in the conversion of image of a score sheet to MusicXML file.
 
 
 \subsection{Image Acquisition}
- The music score sheet image is acquired from MuseScore software. The file format used is ``png". A sample image of score sheet is shown in Fig. 14.
+ The music score sheet image is acquired from MuseScore software. The file format used is ``png". A sample image of score sheet is shown in Fig. 13.
  
  
  \subsection{Image Preprocessing}
@@ -791,12 +785,12 @@ This section presents the steps involved in converting the captured image of a s
 operations like morphological operations and feature extraction.
 
 \subsection{Image Segmentation}
-Image segmentation is the process of partitioning an image into parts or regions. This division into parts is often based on the characteristics of the pixels in the image. Thresholding method of segmenting method is used here to convert a grey scale image into binary image. This transformation is important because the morphological operations like dilation, erosion, etc. can be done efficiently on a binary image. Examples of a segmented image and a non-segmented image are shown in Fig. 15 and Fig. 16. Fig. 16 contains pixel values in the gray scale and each pixel can take any value out of the available 256 gray scale levels. Image segmentation converts the gray scale image into a binary image. 
+Image segmentation is the process of partitioning an image into parts or regions. This division into parts is often based on the characteristics of the pixels in the image. Thresholding method of segmenting method is used here to convert a grey scale image into binary image. This transformation is important because the morphological operations like dilation, erosion, etc. can be done efficiently on a binary image. Examples of a segmented image and a non-segmented image are shown in Fig. 14 and Fig. 15. Fig. 15 contains pixel values in the gray scale and each pixel can take any value out of the available 256 gray scale levels.
 
 \begin{figure}
 \includegraphics[width=3in,height=3.5in,clip,keepaspectratio]{resources/flowchart/flowchart}
 \centering
-\caption{Flow chart for the steps involved conversion of image of score sheet to MusicXML file}
+\caption{Sequence of operations involved in the conversion of image of a score sheet to MusicXML file}
 \end{figure}
 
 \begin{figure}
@@ -820,7 +814,7 @@ Image segmentation is the process of partitioning an image into parts or regions
 \subsection{Morphological Image processing}
 Morphological image processing is a collection of non-linear operations related to the shape or morphology of features in an image. Morphological operations rely only on the relative ordering of
 pixel values, not on their numerical values and therefore are especially suited to the processing of binary images. Morphological techniques typically probe an image with a small template known as a Structuring Element (SE). The SE is very small compared to the image size. They are usually made up of
-ones and zeroes. The SEs usually have odd orders like 3x3, 5x5, 7x7 etc. because, while performing any morphological operations, the centre pixel of the SE is placed on each and every pixel of the
+ones and zeroes. The SEs usually have odd orders like 3x3, 5x5, 7x7 etc. because, while performing any morphological operations, the center pixel of the SE is placed on each and every pixel of the
 image and the operation is thus performed. The SE is positioned at all possible locations in the image and it is compared with the corresponding neighborhood pixels. By marking the locations
 where SE fits or hits the image, information about the structure of the image can be obtained. The SE ``fits” image if for each of its pixels that is set to 1(foreground), the corresponding image pixel
 is also set to 1 \par. Dilation and erosion are morphological image processing techniques which are extensively used in staff line removal.
@@ -835,13 +829,13 @@ produces a new binary image
 \[g = f \oplus s \] 
 with ones in all locations (x,y) of a structuring element’s origin at which that structuring element s hits the the input image f, i.e. g(x,y) = 1 if s hits f and 0 otherwise, repeating f, i.e. g(x,y) = 1 if s hits f and 0 otherwise, repeating. \par
 The holes enclosed by a single region and gaps between different regions become smaller, and
-small intrusions into boundaries of a region are filled in. Fig. 17 shows the effects of dilation on an input image.
+small intrusions into boundaries of a region are filled in. Fig. 16 shows the effects of dilation on an input image.
 
 \subsubsection{Erosion}
 The erosion of a binary image f by a structuring element s (denoted by $ f \ominus s $)
 produces a new binary image
 \[g = f \ominus s \]
-with ones in all locations (x,y) of a structuring element’s origin at which that
+with ones in all locations (x,y) of a structuring element's origin at which that
 structuring element s fits the input image f, i.e. g(x,y) = 1 is s fits f and 0 otherwise, repeating for
 all pixel coordinates (x,y). \par
 Erosion with small square structuring elements shrinks an image by stripping away a layer of
@@ -853,7 +847,7 @@ with s2 twice the size of s1, then
 %\[ f \ominus s2 \thickapprox (f \ominus s1) \ominus s1 \]
 Erosion removes small-scale details from a binary image but simultaneously reduces the size of regions of interest, too. By subtracting the eroded image from the original image, boundaries of each region can be found:
 \[ b = f - (f \ominus s) \]
-where f is an image of the regions, s is structuring element, and b is an image of the region boundaries. Fig. 18 shows the effects of erosion on an input image.
+where f is an image of the regions, s is structuring element, and b is an image of the region boundaries. Fig. 17 shows the effects of erosion on an input image.
 
 \begin{figure}
 \includegraphics[width=3.0in,height=3.5in,clip,keepaspectratio]{resources/implementation/dilation}
@@ -890,10 +884,10 @@ The normalized correlation for two time series can be defined as
 The normalized quantity will vary between -1 and 1. A value of 1 indicates that at the alignment, the two time series have the exact shape (the amplitudes may be different) while a value -1 indicates that they have the same shape except that they have the opposite signs. A value of 0 shows that they are completely uncorrelated. In practice when one applies this normalization to real discrete signals, one will find that a correlation coefficient greater than about 0.7 or 0.8 indicates a pretty good match. \par
 
 The main advantage of the normalized cross correlation over the ordinary cross correlation is that it is less sensitive to linear changes in the amplitude of illumination in the two compared images. Furthermore, the Normalized Cross Correlation is confined in the range between –1 and 1. The setting of detection threshold value is much simpler than the cross correlation. There are several set of templates which are used to determine the symbols using the normalized
-cross correlation method. The database of symbols includes flat, sharp, rests, half note, whole note and quarter note as shown in Fig. 19 to Fig. 23.
+cross correlation method. The database of symbols includes flat, sharp, rests, half note, whole note and quarter note as shown in Fig. 18 to Fig. 22.
 
 \subsubsection{Vertical Translation}
-Vertical Translation of a symbol is used to denote its pitch. It is also a crucial parameter in determining the actual symbol. Any error in this step will distort music. Hence it is one part of the recognition where error is intolerable. The position of staff lines in the score sheet is fixed. This principle is useful in finding out the vertical translation. After the normalized cross correlation, the (x,y) coordinate value of the centre pixel will be available. Comparing this with the standard value, the vertical translation can be easily obtained. Combining both the symbol and its vertical translation the perfect output is obtained. After this step finally the symbols will be ready for Music
+Vertical Translation of a symbol is used to denote its pitch. It is also a crucial parameter in determining the actual symbol. Any error in this step will distort music. Hence it is one part of the recognition where error is intolerable. The position of staff lines in the score sheet is fixed. This principle is useful in finding out the vertical translation. After the normalized cross correlation, the (x,y) coordinate value of the center pixel will be available. Comparing this with the standard value, the vertical translation can be easily obtained. Combining both the symbol and its vertical translation the perfect output is obtained. After this step finally the symbols will be ready for Music
 XML conversion and playback.
 
 \begin{figure}
@@ -933,7 +927,7 @@ this step the vertical translation is determined by using the bottom most staff 
 
 
 \subsection{Conversion to MusicXML}
-For converting the recognized symbols into xml file, the symbols are arranged according to their (x,y) coordinate values. A structure consisting of (x,y) coordinates, staff number, duration, stem, octave, step, voice and alter is created. The structure will be converted into table. The table is sorted and the XML file is generated. The structure for a half note with stem down is shown in Fig. 24. Similarly the structure parameters vary for different notes. The output xml file defines each and every symbol present on the input music score sheet. This file can be played using MuseScore to generate the musical tone. 
+For converting the recognized symbols into xml file, the symbols are arranged according to their (x,y) coordinate values. A structure consisting of (x,y) coordinates, staff number, duration, stem, octave, step, voice and alter is created. The structure will be converted into table. The table is sorted and the XML file is generated. The structure for a half note with stem down is shown in Fig. 23. Similarly the structure parameters vary for different notes. The output xml file defines each and every symbol present on the input music score sheet. This file can be played using MuseScore to generate the musical tone. 
 The XML file generated consists of the following
 \subsubsection{Declaration}
 
@@ -991,11 +985,11 @@ The playback feature is supported by using MuseScore software. The recognized sy
 the MusicXML format is imported to MuseScore and played. The recognized score can be seen
 in MuseScore and can be compared with the input score sheet for any errors. There are many
 features in MuseScore like tempo adjustment, equalizer, mixer and synthesizer for advanced play
-back options. The MuseScore interface is as shown in Fig. 25.
+back options. The MuseScore interface is as shown in Fig. 24.
 
 \section{Results}
-In the section the resulting image from the various stages of OCR is documented.  A sample input image containing the musical notes is taken as input and is shown in Fig. 26. The image consists of various combinations of music symbols such as notes, rests, clefs and time signature. The image is in “.png” format and the file size is 44Kb. The sample input consists of three sets of staff lines.In the next step, staff lines from the image is removed. The output is shown in Fig. 27. Here, it can be observed that the image is complemented and the main reason for this is that the templates
-are in the complemented form. In the Fig. 27, even though staff lines are removed, the whole rests and half rests are not damaged. Further, the notes are not distorted. This is the main advantage of using structuring element method for staff line removal. Different images used as templates for the project are as shown in Fig. 19 to Fig. 23. The musical notes are recognized using template matching technique. \par
+In the section the resulting image from the various stages of OCR is documented.  A sample input image containing the musical notes is taken as input and is shown in Fig. 25. The image consists of various combinations of music symbols such as notes, rests, clefs and time signature. The image is in “.png” format and the file size is 44Kb. The sample input consists of three sets of staff lines.In the next step, staff lines from the image is removed. The output is shown in Fig. 26. Here, it can be observed that the image is complemented and the main reason for this is that the templates
+are in the complemented form. In the Fig. 26, even though staff lines are removed, the whole rests and half rests are not damaged. Further, the notes are not distorted. This is the main advantage of using structuring element method for staff line removal. Different images used as templates for the project are as shown in Fig. 18 to Fig. 22. The musical notes are recognized using template matching technique. \par
 \begin{figure}
 \includegraphics[width=3.5in,height=5.0in,clip,keepaspectratio]{resources/results/good_tone}
 \centering
@@ -1038,8 +1032,8 @@ are in the complemented form. In the Fig. 27, even though staff lines are remove
 \caption{Symbol table for image}
 \end{figure}
 
-After staff line removal, the image is cross correlated with the template images and normalized. The output is as shown in Fig. 28. In this method, only the symbols same as the template will have the maximum value of cross correlated coefficients as shown in Fig. 28 and all other symbols will have minimum value of cross correlated coefficients. This method can identify all similar symbols in single iteration. Same step is repeated with all the templates to recognize all the symbols. \par
-After the normalized cross correlation, the symbol is identified and corresponding XML symbols will be generated. This xml file can be imported to MuseScore software for playback. Currently the system supports 10 different instruments such as guitar, violin, mandolin, melodica, banjo,koto, kazoo, electric guitar, sitar and mezzo-soprano.For cross verification of the correctness of the symbols, a table consisting of symbol name, its (x,y) coordinates, staff number, duration, stem, octave, step, voice and alter is generated. This step is useful in error rectification if there are any from the system. The symbol table for the small portion of airtel ring tone is as shown in Fig. 30. The score sheet is shown in Fig. 31 and the staff line removed output is shown in Fig 32.
+After staff line removal, the image is cross correlated with the template images and normalized. The output is as shown in Fig. 27. In this method, only the symbols same as the template will have the maximum value of cross correlated coefficients as shown in Fig. 27 and all other symbols will have minimum value of cross correlated coefficients. This method can identify all similar symbols in single iteration. Same step is repeated with all the templates to recognize all the symbols. \par
+After the normalized cross correlation, the symbol is identified and corresponding XML symbols will be generated. This xml file can be imported to MuseScore software for playback. Currently the system supports 10 different instruments such as guitar, violin, mandolin, melodica, banjo,koto, kazoo, electric guitar, sitar and mezzo-soprano.For cross verification of the correctness of the symbols, a table consisting of symbol name, its (x,y) coordinates, staff number, duration, stem, octave, step, voice and alter is generated. This step is useful in error rectification if there are any from the system. The symbol table for the small portion of airtel ring tone is as shown in Fig. 29. The score sheet is shown in Fig. 30 and the staff line removed output is shown in Fig 31.
 
 
 
