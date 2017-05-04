@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.31)  4 MAY 2017 10:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.31)  4 MAY 2017 12:31
 entering extended mode
 **./main.tex
 (main.tex
@@ -146,7 +146,14 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 ))
 \Gin@req@height=\dimen117
 \Gin@req@width=\dimen118
-) (main.aux)
+) (main.aux
+
+LaTeX Warning: Label `IEEEhowto:bainbridgei' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:bainbridgei' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 384.
@@ -161,8 +168,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 384.
 LaTeX Font Info:    ... okay on input line 384.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 384.
 LaTeX Font Info:    ... okay on input line 384.
-
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+ ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count110
 \scratchdimen=\dimen119
@@ -564,33 +570,62 @@ n input line 1036.
 (pdftex.def)             Requested size: 252.94548pt x 93.44481pt.
  [7 <./resources/implementation/symbol_interpretation.jpg> <./resources/impleme
 ntation/playback.jpg> <./resources/results/good_tone.png (PNG copy)> <./resourc
-es/results/good_tone_staff_removed.png (PNG copy)>] [8 <./resources/results/nor
-malized_cross_correlation.png (PNG copy)> <./resources/results/matched_symbols.
-png (PNG copy)> <./resources/results/symbol_table.png (PNG copy)> <./resources/
-results/airtel.png (PNG copy)> <./resources/results/airtel_staff_line_removed.p
-ng (PNG copy)>] (main.aux) ) 
+es/results/good_tone_staff_removed.png (PNG copy)>]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 1097
+.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/it' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1097.
+
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no Ë in font ptmr7t!
+Missing character: There is no ‡ in font ptmr7t!
+Missing character: There is no Â in font ptmr7t!
+Missing character: There is no ´ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ± in font ptmr7t!
+Missing character: There is no Â in font ptmr7t!
+Missing character: There is no ´ in font ptmr7t!
+Missing character: There is no Â in font ptmr7t!
+Missing character: There is no ´ in font ptmr7t!
+ [8 <./resources/results/normalized_cross_correlation.png (PNG copy)> <./resour
+ces/results/matched_symbols.png (PNG copy)> <./resources/results/symbol_table.p
+ng (PNG copy)> <./resources/results/airtel.png (PNG copy)> <./resources/results
+/airtel_staff_line_removed.png (PNG copy)>] [9
+
+] (main.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2514 strings out of 493333
- 43353 string characters out of 3139194
- 104673 words of memory out of 3000000
- 6001 multiletter control sequences out of 15000+200000
- 37406 words of font info for 66 fonts, out of 3000000 for 9000
+ 2542 strings out of 493333
+ 43825 string characters out of 3139194
+ 104727 words of memory out of 3000000
+ 6024 multiletter control sequences out of 15000+200000
+ 38798 words of font info for 68 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
- 39i,7n,25p,1194b,216s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8
-r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb
-8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (8 pages, 1079087 bytes).
+ 39i,7n,25p,1194b,312s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
+10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw
+/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pf
+b>
+Output written on main.pdf (9 pages, 1089190 bytes).
 PDF statistics:
- 171 PDF objects out of 1000 (max. 8388607)
+ 178 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  348 words of extra memory for PDF output out of 10000 (max. 10000000)
 
