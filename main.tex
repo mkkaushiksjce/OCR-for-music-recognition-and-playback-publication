@@ -791,7 +791,7 @@ This section presents the steps involved in converting the captured image of a s
 operations like morphological operations and feature extraction.
 
 \subsection{Image Segmentation}
-Image segmentation is the process of partitioning an image into parts or regions. This division into parts is often based on the characteristics of the pixels in the image. Thresholding method of segmenting method is used here to convert a grey scale image into binary image. This transformation is important because the morphological operations like dilation, erosion, etc. can be done efficiently on a binary image. Examples of a segmented image and a non-segmented image are shown in Fig. 15 and Fig. 16. Fig. 16 contains pixel values in the gray scale and each pixel can take any value out of the available 256 gray scale levels. As seen from figures 4.3 and 4.4, image segmentation converts the gray scale image into a binary image. 
+Image segmentation is the process of partitioning an image into parts or regions. This division into parts is often based on the characteristics of the pixels in the image. Thresholding method of segmenting method is used here to convert a grey scale image into binary image. This transformation is important because the morphological operations like dilation, erosion, etc. can be done efficiently on a binary image. Examples of a segmented image and a non-segmented image are shown in Fig. 15 and Fig. 16. Fig. 16 contains pixel values in the gray scale and each pixel can take any value out of the available 256 gray scale levels. Image segmentation converts the gray scale image into a binary image. 
 
 \begin{figure}
 \includegraphics[width=3in,height=3.5in,clip,keepaspectratio]{resources/flowchart/flowchart}
@@ -994,8 +994,8 @@ features in MuseScore like tempo adjustment, equalizer, mixer and synthesizer fo
 back options. The MuseScore interface is as shown in Fig. 25.
 
 \section{Results}
-In the section the resulting image from the various stages of OCR is documented.  A sample input image containing the musical notes is taken as input and is shown in figure 5.1. The image consists of various combinations of music symbols such as notes, rests, clefs and time signature. The image is in “.png” format and the file size is 44Kb. The sample input consists of three sets of staff lines.In the next step, staff lines from the image is removed. The output is shown in figure 5.2. Here, it can be observed that the image is complemented and the main reason for this is that the templates
-are in the complemented form. In the figure 5.2, even though staff lines are removed, the whole rests and half rests are not damaged. Further, the notes are not distorted. This is the main advantage of using structuring element method for staff line removal. Different images used as templates for the project are as shown in Figures 4.7 to 4.11. The musical notes are recognized using template matching technique. \par
+In the section the resulting image from the various stages of OCR is documented.  A sample input image containing the musical notes is taken as input and is shown in Fig. 26. The image consists of various combinations of music symbols such as notes, rests, clefs and time signature. The image is in “.png” format and the file size is 44Kb. The sample input consists of three sets of staff lines.In the next step, staff lines from the image is removed. The output is shown in Fig. 27. Here, it can be observed that the image is complemented and the main reason for this is that the templates
+are in the complemented form. In the Fig. 27, even though staff lines are removed, the whole rests and half rests are not damaged. Further, the notes are not distorted. This is the main advantage of using structuring element method for staff line removal. Different images used as templates for the project are as shown in Fig. 19 to Fig. 23. The musical notes are recognized using template matching technique. \par
 \begin{figure}
 \includegraphics[width=3.5in,height=5.0in,clip,keepaspectratio]{resources/results/good_tone}
 \centering
@@ -1026,8 +1026,20 @@ are in the complemented form. In the figure 5.2, even though staff lines are rem
 \caption{Symbol table for image}
 \end{figure}
 
-After staff line removal, the image is cross correlated with the template images and normalized. The output is as shown in Figure 5.3. In this method, only the symbols same as the template will have the maximum value of cross correlated coefficients as shown in figure 5.4 and all other symbols will have minimum value of cross correlated coefficients. This method can identify all similar symbols in single iteration. Same step is repeated with all the templates to recognize all the symbols. \par
-After the normalized cross correlation, the symbol is identified and corresponding XML symbols will be generated. This xml file can be imported to MuseScore software for playback. Currently the system supports 10 different instruments such as guitar, violin, mandolin, melodica, banjo,koto, kazoo, electric guitar, sitar and mezzo-soprano.For cross verification of the correctness of the symbols, a table consisting of symbol name, its (x,y) coordinates, staff number, duration, stem, octave, step, voice and alter is generated. This step is useful in error rectification if there are any from the system. The symbol table for the small portion of airtel ring tone is as shown in Figure 5.5. The score sheet is shown in Figure 5.6 and the staff line removed output is shown in Figure 5.7.
+\begin{figure}
+\includegraphics[width=3.5in,height=5.0in,clip,keepaspectratio]{resources/results/airtel}
+\centering
+\caption{Symbol table for image}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=3.5in,height=5.0in,clip,keepaspectratio]{resources/results/airtel_staff_line_removed}
+\centering
+\caption{Symbol table for image}
+\end{figure}
+
+After staff line removal, the image is cross correlated with the template images and normalized. The output is as shown in Fig. 28. In this method, only the symbols same as the template will have the maximum value of cross correlated coefficients as shown in Fig. 28 and all other symbols will have minimum value of cross correlated coefficients. This method can identify all similar symbols in single iteration. Same step is repeated with all the templates to recognize all the symbols. \par
+After the normalized cross correlation, the symbol is identified and corresponding XML symbols will be generated. This xml file can be imported to MuseScore software for playback. Currently the system supports 10 different instruments such as guitar, violin, mandolin, melodica, banjo,koto, kazoo, electric guitar, sitar and mezzo-soprano.For cross verification of the correctness of the symbols, a table consisting of symbol name, its (x,y) coordinates, staff number, duration, stem, octave, step, voice and alter is generated. This step is useful in error rectification if there are any from the system. The symbol table for the small portion of airtel ring tone is as shown in Fig. 30. The score sheet is shown in Fig. 31 and the staff line removed output is shown in Fig 32.
 
 
 
