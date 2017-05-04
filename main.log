@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.31)  29 APR 2017 21:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.31)  4 MAY 2017 10:19
 entering extended mode
 **./main.tex
 (main.tex
@@ -487,30 +487,92 @@ File: resources/implementation/playback.jpg Graphic file (type jpg)
 Package pdftex.def Info: resources/implementation/playback.jpg used on input li
 ne 984.
 (pdftex.def)             Requested size: 252.94235pt x 137.76654pt.
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+
+<resources/results/good_tone.png, id=105, 630.355pt x 314.17375pt>
+File: resources/results/good_tone.png Graphic file (type png)
+
+<use resources/results/good_tone.png>
+Package pdftex.def Info: resources/results/good_tone.png used on input line 100
+0.
+(pdftex.def)             Requested size: 252.94548pt x 126.06995pt.
+
+<resources/results/good_tone_staff_removed.png, id=107, 630.355pt x 339.2675pt>
+File: resources/results/good_tone_staff_removed.png Graphic file (type png)
+<use resources/results/good_tone_staff_removed.png>
+Package pdftex.def Info: resources/results/good_tone_staff_removed.png used on 
+input line 1006.
+(pdftex.def)             Requested size: 252.94548pt x 136.13943pt.
+
+<resources/results/normalized_cross_correlation.png, id=109, 630.355pt x 335.25
+25pt>
+File: resources/results/normalized_cross_correlation.png Graphic file (type png
+)
+ <use resources/results/normalized_cross_correlation.png>
+Package pdftex.def Info: resources/results/normalized_cross_correlation.png use
+d on input line 1012.
+(pdftex.def)             Requested size: 252.94548pt x 134.52832pt.
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ò in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ò in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+
+<resources/results/matched_symbols.png, id=111, 630.355pt x 169.63374pt>
+File: resources/results/matched_symbols.png Graphic file (type png)
+
+<use resources/results/matched_symbols.png>
+Package pdftex.def Info: resources/results/matched_symbols.png used on input li
+ne 1018.
+(pdftex.def)             Requested size: 252.94548pt x 68.0697pt.
+
+<resources/results/symbol_table.png, id=113, 630.355pt x 425.59pt>
+File: resources/results/symbol_table.png Graphic file (type png)
+
+<use resources/results/symbol_table.png>
+Package pdftex.def Info: resources/results/symbol_table.png used on input line 
+1024.
+(pdftex.def)             Requested size: 252.94548pt x 170.77847pt.
  [7 <./resources/implementation/symbol_interpretation.jpg> <./resources/impleme
-ntation/playback.jpg>] (main.aux) ) 
+ntation/playback.jpg> <./resources/results/good_tone.png (PNG copy)> <./resourc
+es/results/good_tone_staff_removed.png (PNG copy)>] [8 <./resources/results/nor
+malized_cross_correlation.png (PNG copy)> <./resources/results/matched_symbols.
+png (PNG copy)> <./resources/results/symbol_table.png (PNG copy)>] (main.aux) )
+ 
 Here is how much of TeX's memory you used:
- 2479 strings out of 493333
- 41977 string characters out of 3139194
+ 2504 strings out of 493333
+ 42976 string characters out of 3139194
  104673 words of memory out of 3000000
- 5973 multiletter control sequences out of 15000+200000
+ 5993 multiletter control sequences out of 15000+200000
  37406 words of font info for 66 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
  39i,7n,25p,1194b,216s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips
-/base/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/tim
-es/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (7 pages, 647827 bytes).
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utm
+ri8a.pfb>
+Output written on main.pdf (8 pages, 1047102 bytes).
 PDF statistics:
- 147 PDF objects out of 1000 (max. 8388607)
+ 165 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 271 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 326 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -993,6 +993,43 @@ in MuseScore and can be compared with the input score sheet for any errors. Ther
 features in MuseScore like tempo adjustment, equalizer, mixer and synthesizer for advanced play
 back options. The MuseScore interface is as shown in Fig. 25.
 
+\section{Results}
+In the section the resulting image from the various stages of OCR is documented.  A sample input image containing the musical notes is taken as input and is shown in figure 5.1. The image consists of various combinations of music symbols such as notes, rests, clefs and time signature. The image is in “.png” format and the file size is 44Kb. The sample input consists of three sets of staff lines.In the next step, staff lines from the image is removed. The output is shown in figure 5.2. Here, it can be observed that the image is complemented and the main reason for this is that the templates
+are in the complemented form. In the figure 5.2, even though staff lines are removed, the whole rests and half rests are not damaged. Further, the notes are not distorted. This is the main advantage of using structuring element method for staff line removal. Different images used as templates for the project are as shown in Figures 4.7 to 4.11. The musical notes are recognized using template matching technique. \par
+\begin{figure}
+\includegraphics[width=3.5in,height=5.0in,clip,keepaspectratio]{resources/results/good_tone}
+\centering
+\caption{Input image}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=3.5in,height=5.0in,clip,keepaspectratio]{resources/results/good_tone_staff_removed}
+\centering
+\caption{Staff line removed image}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=3.5in,height=5.0in,clip,keepaspectratio]{resources/results/normalized_cross_correlation}
+\centering
+\caption{Normalized cross correlated output of the input image with the ‘Sharp’ template}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=3.5in,height=5.0in,clip,keepaspectratio]{resources/results/matched_symbols}
+\centering
+\caption{The center pixels with maximum value after cross correlation}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=3.5in,height=5.0in,clip,keepaspectratio]{resources/results/symbol_table}
+\centering
+\caption{Symbol table for image}
+\end{figure}
+
+After staff line removal, the image is cross correlated with the template images and normalized. The output is as shown in Figure 5.3. In this method, only the symbols same as the template will have the maximum value of cross correlated coefficients as shown in figure 5.4 and all other symbols will have minimum value of cross correlated coefficients. This method can identify all similar symbols in single iteration. Same step is repeated with all the templates to recognize all the symbols. \par
+After the normalized cross correlation, the symbol is identified and corresponding XML symbols will be generated. This xml file can be imported to MuseScore software for playback. Currently the system supports 10 different instruments such as guitar, violin, mandolin, melodica, banjo,koto, kazoo, electric guitar, sitar and mezzo-soprano.For cross verification of the correctness of the symbols, a table consisting of symbol name, its (x,y) coordinates, staff number, duration, stem, octave, step, voice and alter is generated. This step is useful in error rectification if there are any from the system. The symbol table for the small portion of airtel ring tone is as shown in Figure 5.5. The score sheet is shown in Figure 5.6 and the staff line removed output is shown in Figure 5.7.
+
+
 
 % if have a single appendix:
 %\appendix[Proof of the Zonklar Equations]
@@ -1011,9 +1048,7 @@ back options. The MuseScore interface is as shown in Fig. 25.
 % use section* for acknowledgement
 \section*{Acknowledgment}
 
-I would like to thank my team mates for their support and Prof. Nataraj C.R. for his valuable guidance without which the project would not have been possible.
-
-
+I would like to thank my team mates for their support and Prof. Nataraj C.R. for his valuable guidance without which the project would not have been possible
 % Can use something like this to put references on a page
 % by themselves when using endfloat and the captionsoff option.
 \ifCLASSOPTIONcaptionsoff
