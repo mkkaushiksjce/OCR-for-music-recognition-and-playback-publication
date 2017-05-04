@@ -534,7 +534,7 @@ bar lines, double bar lines and measures are shown in Fig. 2.
 \caption{Space notes and line notes on the staff}
 \end{figure}
 
-\subsubsection{Notes}
+\subsubsection{Notes}`
 Depending on the position of the notes on the stafflines, there are 2 types of notes. 
 \begin{itemize}
   \item \textbf{Space Notes}: A space note is a note whose note head fits within a space on the staff.
@@ -612,9 +612,7 @@ rests. They are shown in Fig. 9.
 \subsubsection{Time Signature}
 It appears at the beginning of every piece of music score. It gives the information of how many
 beats are in each measure.
-4/4 time :
-This time signature is used to indicate that there will be 4 beats in each measure. Refer to Fig. 10.
-
+For example a 4/4 time signature is used to indicate that there will be 4 beats in each measure. Refer to Fig. 10.
 
 \subsubsection{Key Signatures}
 The key signature fits between the clef and the time signature. A key signature tells which notes
@@ -726,7 +724,7 @@ MusicXML was based primarily on two academic music formats:
 MusicXML has two different top-level Document Type Defitions (DTDs), each with its own
 root element. If the partwise DTD is used, the root element is  \textless score-partwise\textgreater . The musical part
 is primary, and measures are contained within each part. If the timewise DTD is used, the root
-element is <score-timewise>. The measure is primary, and musical parts are contained within each
+element is \textless score-timewise\textgreater. The measure is primary, and musical parts are contained within each
 measure. The MusicXML XML Schema Definition (XSD) includes both of the top-level document
 elements in a single XSD file.Having two different structures does not work well if there is no
 automatic way to switch between them. MusicXML provides two EXtensible Stylesheet Language
@@ -817,7 +815,7 @@ pixel values, not on their numerical values and therefore are especially suited 
 ones and zeroes. The SEs usually have odd orders like 3x3, 5x5, 7x7 etc. because, while performing any morphological operations, the center pixel of the SE is placed on each and every pixel of the
 image and the operation is thus performed. The SE is positioned at all possible locations in the image and it is compared with the corresponding neighborhood pixels. By marking the locations
 where SE fits or hits the image, information about the structure of the image can be obtained. The SE ``fits” image if for each of its pixels that is set to 1(foreground), the corresponding image pixel
-is also set to 1 \par. Dilation and erosion are morphological image processing techniques which are extensively used in staff line removal.
+is also set to 1.\par Dilation and erosion are morphological image processing techniques which are extensively used in staff line removal.
 
 \subsection{Staff Line Removal}
  Removing staff lines is important, because
@@ -827,7 +825,7 @@ in the score sheet essentially the same symbol will be placed on different staff
 The dilation of an image f by a structuring element s (denoted by $ f \oplus s $)
 produces a new binary image 
 \[g = f \oplus s \] 
-with ones in all locations (x,y) of a structuring element’s origin at which that structuring element s hits the the input image f, i.e. g(x,y) = 1 if s hits f and 0 otherwise, repeating f, i.e. g(x,y) = 1 if s hits f and 0 otherwise, repeating. \par
+with ones in all locations (x,y) of a structuring element’s origin at which that structuring element s fits the the input image f, i.e. g(x,y) = 1 if s fits f and 0 otherwise, repeating f, i.e. g(x,y) = 1 if s hits f and 0 otherwise, repeating. \par
 The holes enclosed by a single region and gaps between different regions become smaller, and
 small intrusions into boundaries of a region are filled in. Fig. 16 shows the effects of dilation on an input image.
 
@@ -862,7 +860,7 @@ where f is an image of the regions, s is structuring element, and b is an image 
 \end{figure}
 
 \subsection{Symbol Recognition}
-The symbol recognition is the critical and most important step OCR systems. This step actually determines the performance of the overall project. Along with the symbol recognition, vertical translation has to be determined to get the output. To recognize the symbols, template matching is used. A template
+The symbol recognition is the critical and most important step OCR systems. This step determines the overall performance. Along with the symbol recognition, vertical translation has to be determined to get the output. To recognize the symbols, template matching is used. A template
 is a small image (sub-image), the goal is to find occurrences of this template in a larger image. Template matching techniques compare portions of images against one another. Sample images are used to recognize similar objects in source image.\par
 Template matching has been a classical approach to the problems of locating and recognizing of an object in an image. Among several matching methods, Normalized Cross Correlation and Square root of Sum of Square Differences have been used as the measure for similarity. Moreover, many other template matching techniques, such as Sum of Absolute Differences (SAD) and Sequential Similarity Detection Algorithm (SSDA) have been adopted in many applications for pattern recognition. In the project Normalized Cross Correlation technique is used for template matching. \par
 Correlation is a measure of the degree to which two variables agree, not necessary in actual value but in general behavior. The two variables are the corresponding pixel values in two images, template and source. The cross-correlation of two real continuous functions x(t) and y(t) , is defined by
@@ -883,7 +881,7 @@ The normalized correlation for two time series can be defined as
 
 The normalized quantity will vary between -1 and 1. A value of 1 indicates that at the alignment, the two time series have the exact shape (the amplitudes may be different) while a value -1 indicates that they have the same shape except that they have the opposite signs. A value of 0 shows that they are completely uncorrelated. In practice when one applies this normalization to real discrete signals, one will find that a correlation coefficient greater than about 0.7 or 0.8 indicates a pretty good match. \par
 
-The main advantage of the normalized cross correlation over the ordinary cross correlation is that it is less sensitive to linear changes in the amplitude of illumination in the two compared images. Furthermore, the Normalized Cross Correlation is confined in the range between –1 and 1. The setting of detection threshold value is much simpler than the cross correlation. There are several set of templates which are used to determine the symbols using the normalized
+The main advantage of the normalized cross correlation over the ordinary cross correlation is that it is less sensitive to linear changes in the amplitude of illumination in the two compared images. Furthermore, the Normalized Cross Correlation is confined in the range between -1 and 1. The setting of detection threshold value is much simpler than the cross correlation. There are several set of templates which are used to determine the symbols using the normalized
 cross correlation method. The database of symbols includes flat, sharp, rests, half note, whole note and quarter note as shown in Fig. 18 to Fig. 22.
 
 \subsubsection{Vertical Translation}
@@ -938,9 +936,9 @@ in another file.\newline
 \textit{ \textless $? xml version=``1.0" encoding=``UTF_8" standalone=``no"? $ \textgreater }
 
 \subsubsection{Root element type}
-The <score-partwise> element is made up of parts, where each
+The \textless score-partwise\textgreater element is made up of parts, where each
 part is made up of measures.\newline
-\textit{ \textless $ score-partwise version = ``3.0" $ \textgreater }  
+\textit{ \textless$score-partwise \enspace version = ``3.0"$\textgreater }  
 
 \subsubsection{ Part id}
 The id attribute refers to an id attribute for a score-part in the header. \newline
@@ -959,7 +957,7 @@ that follow in this part.Attributes contain the following:
 The staves element indicates the number of staves in a musical part.
 
 \subsubsection{Clef}
-The clef element is used to indicate the clef for the staff. Itis used for specifying the clef’s sign
+The clef element is used to indicate the clef for the staff. It is used for specifying the clef’s sign
 and its line.The treble clef definition indicates that the second line from the bottom of the staff is a G.
 
 \subsubsection{Number}
@@ -1032,7 +1030,7 @@ are in the complemented form. In the Fig. 26, even though staff lines are remove
 \caption{Symbol table for image}
 \end{figure}
 
-After staff line removal, the image is cross correlated with the template images and normalized. The output is as shown in Fig. 27. In this method, only the symbols same as the template will have the maximum value of cross correlated coefficients as shown in Fig. 27 and all other symbols will have minimum value of cross correlated coefficients. This method can identify all similar symbols in single iteration. Same step is repeated with all the templates to recognize all the symbols. \par
+After staff line removal, the image is cross correlated with the template images and normalized. The output is as shown in Fig. 27. In this method, only the symbols same as the template will have the maximum value of cross correlated coefficients as shown in Fig. 28 and all other symbols will have minimum value of cross correlated coefficients. This method can identify all similar symbols in single iteration. Same step is repeated with all the templates to recognize all the symbols. \par
 After the normalized cross correlation, the symbol is identified and corresponding XML symbols will be generated. This xml file can be imported to MuseScore software for playback. Currently the system supports 10 different instruments such as guitar, violin, mandolin, melodica, banjo,koto, kazoo, electric guitar, sitar and mezzo-soprano.For cross verification of the correctness of the symbols, a table consisting of symbol name, its (x,y) coordinates, staff number, duration, stem, octave, step, voice and alter is generated. This step is useful in error rectification if there are any from the system. The symbol table for the small portion of airtel ring tone is as shown in Fig. 29. The score sheet is shown in Fig. 30 and the staff line removed output is shown in Fig 31.
 
 
