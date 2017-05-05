@@ -1,0 +1,47 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Overview of Sheet Music}{}% 2
+\BOOKMARK [2][-]{subsubsection.2.0.1}{The Staff}{section.2}% 3
+\BOOKMARK [3][-]{subsubsection.2.0.2}{Measure}{subsubsection.2.0.1}% 4
+\BOOKMARK [3][-]{subsubsection.2.0.3}{Notes}{subsubsection.2.0.1}% 5
+\BOOKMARK [3][-]{subsubsection.2.0.4}{Note lengths}{subsubsection.2.0.1}% 6
+\BOOKMARK [3][-]{subsubsection.2.0.5}{Note head and stem}{subsubsection.2.0.1}% 7
+\BOOKMARK [3][-]{subsubsection.2.0.6}{Note Names}{subsubsection.2.0.1}% 8
+\BOOKMARK [3][-]{subsubsection.2.0.7}{Treble Clef}{subsubsection.2.0.1}% 9
+\BOOKMARK [3][-]{subsubsection.2.0.8}{Rests}{subsubsection.2.0.1}% 10
+\BOOKMARK [3][-]{subsubsection.2.0.9}{Time Signature}{subsubsection.2.0.1}% 11
+\BOOKMARK [3][-]{subsubsection.2.0.10}{Key Signatures}{subsubsection.2.0.1}% 12
+\BOOKMARK [1][-]{section.3}{MusicXML}{}% 13
+\BOOKMARK [2][-]{subsubsection.3.0.1}{Tag}{section.3}% 14
+\BOOKMARK [3][-]{subsubsection.3.0.2}{Element}{subsubsection.3.0.1}% 15
+\BOOKMARK [3][-]{subsubsection.3.0.3}{Root element}{subsubsection.3.0.1}% 16
+\BOOKMARK [3][-]{subsubsection.3.0.4}{Parent element}{subsubsection.3.0.1}% 17
+\BOOKMARK [3][-]{subsubsection.3.0.5}{Child element}{subsubsection.3.0.1}% 18
+\BOOKMARK [3][-]{subsubsection.3.0.6}{Attribute}{subsubsection.3.0.1}% 19
+\BOOKMARK [3][-]{subsubsection.3.0.7}{Data String}{subsubsection.3.0.1}% 20
+\BOOKMARK [3][-]{subsubsection.3.0.8}{XML declaration}{subsubsection.3.0.1}% 21
+\BOOKMARK [1][-]{section.4}{Software Requirements}{}% 22
+\BOOKMARK [1][-]{section.5}{Implementation}{}% 23
+\BOOKMARK [2][-]{subsection.5.1}{Image Acquisition}{section.5}% 24
+\BOOKMARK [2][-]{subsection.5.2}{Image Preprocessing}{section.5}% 25
+\BOOKMARK [2][-]{subsection.5.3}{Image Segmentation}{section.5}% 26
+\BOOKMARK [2][-]{subsection.5.4}{Morphological Image processing}{section.5}% 27
+\BOOKMARK [2][-]{subsection.5.5}{Staff Line Removal}{section.5}% 28
+\BOOKMARK [3][-]{subsubsection.5.5.1}{Dilation}{subsection.5.5}% 29
+\BOOKMARK [3][-]{subsubsection.5.5.2}{Erosion}{subsection.5.5}% 30
+\BOOKMARK [2][-]{subsection.5.6}{Symbol Recognition}{section.5}% 31
+\BOOKMARK [2][-]{subsection.5.7}{Normalized Cross Correlation}{section.5}% 32
+\BOOKMARK [3][-]{subsubsection.5.7.1}{Vertical Translation}{subsection.5.7}% 33
+\BOOKMARK [2][-]{subsection.5.8}{Symbol Interpretation}{section.5}% 34
+\BOOKMARK [2][-]{subsection.5.9}{Conversion to MusicXML}{section.5}% 35
+\BOOKMARK [3][-]{subsubsection.5.9.1}{Declaration}{subsection.5.9}% 36
+\BOOKMARK [3][-]{subsubsection.5.9.2}{Root element type}{subsection.5.9}% 37
+\BOOKMARK [3][-]{subsubsection.5.9.3}{ Part id}{subsection.5.9}% 38
+\BOOKMARK [3][-]{subsubsection.5.9.4}{ Measure number}{subsection.5.9}% 39
+\BOOKMARK [3][-]{subsubsection.5.9.5}{Attributes}{subsection.5.9}% 40
+\BOOKMARK [3][-]{subsubsection.5.9.6}{ Staves}{subsection.5.9}% 41
+\BOOKMARK [3][-]{subsubsection.5.9.7}{Clef}{subsection.5.9}% 42
+\BOOKMARK [3][-]{subsubsection.5.9.8}{Number}{subsection.5.9}% 43
+\BOOKMARK [3][-]{subsubsection.5.9.9}{Stem}{subsection.5.9}% 44
+\BOOKMARK [2][-]{subsection.5.10}{Playback}{section.5}% 45
+\BOOKMARK [1][-]{section.6}{Results}{}% 46
+\BOOKMARK [1][-]{section*.2}{References}{}% 47
