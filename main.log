@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.31)  5 MAY 2017 08:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.31)  6 MAY 2017 16:10
 entering extended mode
 **./main.tex
 (main.tex
@@ -597,14 +597,14 @@ m-puter Sci-ence
  []
 
 
-Underfull \hbox (badness 6316) in paragraph at lines 1113--1114
-\OT1/ptm/m/it/8 Con-fer-ence\OT1/ptm/m/n/8 [Online]. Avail-able: $http : / / ww
-w . cs . waikato . ac . nz / []davidb /
+Underfull \hbox (badness 10000) in paragraph at lines 1113--1114
+\OT1/ptm/m/it/8 Con-fer-ence\OT1/ptm/m/n/8 [Online]. Available:$http : / / www 
+. cs . waikato . ac . nz / []davidb /
  []
 
 
 Underfull \hbox (badness 2042) in paragraph at lines 1125--1126
-[]\OT1/ptm/m/n/8 MuseScore Hand-book, [On-line].Available: $https : / / musesco
+[]\OT1/ptm/m/n/8 MuseScore Hand-book, [On-line]. Available:$https : / / musesco
 re . org / en /
  []
 
@@ -619,10 +619,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2631 strings out of 493333
- 44897 string characters out of 3139194
- 108832 words of memory out of 3000000
- 6104 multiletter control sequences out of 15000+200000
+ 2632 strings out of 493333
+ 44919 string characters out of 3139194
+ 108840 words of memory out of 3000000
+ 6105 multiletter control sequences out of 15000+200000
  40365 words of font info for 73 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
  39i,8n,25p,1194b,330s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -638,7 +638,7 @@ ts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
 KTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/ut
 mr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (9 pages, 1096464 bytes).
+Output written on main.pdf (9 pages, 1096524 bytes).
 PDF statistics:
  180 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
