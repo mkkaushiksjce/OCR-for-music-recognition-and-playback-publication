@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.31)  6 MAY 2017 18:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.31)  6 MAY 2017 18:32
 entering extended mode
 **./main.tex
 (main.tex
@@ -485,7 +485,7 @@ Missing character: There is no ù in font ptmr7t!
 File: resources/results/good_tone.png Graphic file (type png)
 
 <use resources/results/good_tone.png>
-Package pdftex.def Info: resources/results/good_tone.png used on input line 987
+Package pdftex.def Info: resources/results/good_tone.png used on input line 988
 .
 (pdftex.def)             Requested size: 252.94548pt x 126.06995pt.
 
@@ -493,7 +493,7 @@ Package pdftex.def Info: resources/results/good_tone.png used on input line 987
 File: resources/results/good_tone_staff_removed.png Graphic file (type png)
 <use resources/results/good_tone_staff_removed.png>
 Package pdftex.def Info: resources/results/good_tone_staff_removed.png used on 
-input line 993.
+input line 994.
 (pdftex.def)             Requested size: 252.94548pt x 136.13943pt.
 
 <resources/results/normalized_cross_correlation.png, id=107, 630.355pt x 335.25
@@ -502,7 +502,7 @@ File: resources/results/normalized_cross_correlation.png Graphic file (type png
 )
  <use resources/results/normalized_cross_correlation.png>
 Package pdftex.def Info: resources/results/normalized_cross_correlation.png use
-d on input line 999.
+d on input line 1000.
 (pdftex.def)             Requested size: 252.94548pt x 134.52832pt.
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
@@ -522,7 +522,7 @@ File: resources/results/matched_symbols.png Graphic file (type png)
 
 <use resources/results/matched_symbols.png>
 Package pdftex.def Info: resources/results/matched_symbols.png used on input li
-ne 1005.
+ne 1006.
 (pdftex.def)             Requested size: 252.94548pt x 68.0697pt.
 
 <resources/results/symbol_table.png, id=111, 630.355pt x 425.59pt>
@@ -530,33 +530,33 @@ File: resources/results/symbol_table.png Graphic file (type png)
 
 <use resources/results/symbol_table.png>
 Package pdftex.def Info: resources/results/symbol_table.png used on input line 
-1011.
+1012.
 (pdftex.def)             Requested size: 252.94548pt x 170.77847pt.
 
 <resources/results/airtel.png, id=113, 630.355pt x 194.7275pt>
 File: resources/results/airtel.png Graphic file (type png)
 
 <use resources/results/airtel.png>
-Package pdftex.def Info: resources/results/airtel.png used on input line 1017.
+Package pdftex.def Info: resources/results/airtel.png used on input line 1018.
 (pdftex.def)             Requested size: 252.94548pt x 78.13919pt.
 
 <resources/results/airtel_staff_line_removed.png, id=115, 630.355pt x 232.87pt>
 File: resources/results/airtel_staff_line_removed.png Graphic file (type png)
 <use resources/results/airtel_staff_line_removed.png>
 Package pdftex.def Info: resources/results/airtel_staff_line_removed.png used o
-n input line 1023.
+n input line 1024.
 (pdftex.def)             Requested size: 252.94548pt x 93.44481pt.
  [7 <./resources/implementation/symbol_interpretation.jpg> <./resources/impleme
 ntation/playback.jpg> <./resources/results/good_tone.png (PNG copy)> <./resourc
 es/results/good_tone_staff_removed.png (PNG copy)>]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 1084
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 1085
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/it' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1084.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1085.
 
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
@@ -572,35 +572,35 @@ Missing character: There is no ¥ in font ptmr7t!
 Missing character: There is no ¬ in font ptmr7t!
 Missing character: There is no ¥ in font ptmr7t!
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 1108.
+(Font)              <8> on input line 1109.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 1108.
+(Font)              <6> on input line 1109.
 
-Underfull \hbox (badness 5878) in paragraph at lines 1108--1109
+Underfull \hbox (badness 5878) in paragraph at lines 1109--1110
 []\OT1/ptm/m/n/8 David Bain-bridge and Tim Bell,``An ex-ten-si-ble Op-tical Mu-
 sic
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1108--1109
+Underfull \hbox (badness 10000) in paragraph at lines 1109--1110
 \OT1/ptm/m/n/8 Recog-ni-tion sys-tem", in \OT1/ptm/m/it/8 19th Aus-tralasian Co
 m-puter Sci-ence
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1108--1109
+Underfull \hbox (badness 10000) in paragraph at lines 1109--1110
 \OT1/ptm/m/it/8 Con-fer-ence\OT1/ptm/m/n/8 [Online]. Available:$http : / / www 
 . cs . waikato . ac . nz / []davidb /
  []
 
 
-Underfull \hbox (badness 1769) in paragraph at lines 1117--1118
+Underfull \hbox (badness 1769) in paragraph at lines 1118--1119
 []\OT1/ptm/m/n/8 Morphological Im-age pro-cess-ing lec-ture notes, In-tel-li-ge
 nt Vi-sion
  []
 
 
-Underfull \hbox (badness 4967) in paragraph at lines 1117--1118
+Underfull \hbox (badness 4967) in paragraph at lines 1118--1119
 \OT1/ptm/m/n/8 Sys-tems: COMP-SCI 773 course, Uni-ver-sity of Auck-land [On-
  []
 
@@ -608,13 +608,13 @@ Underfull \hbox (badness 4967) in paragraph at lines 1117--1118
 es/results/matched_symbols.png (PNG copy)> <./resources/results/symbol_table.pn
 g (PNG copy)> <./resources/results/airtel.png (PNG copy)> <./resources/results/
 airtel_staff_line_removed.png (PNG copy)>]
-Underfull \hbox (badness 2042) in paragraph at lines 1123--1124
+Underfull \hbox (badness 2042) in paragraph at lines 1124--1125
 []\OT1/ptm/m/n/8 MuseScore Hand-book, [On-line]. Available:$https : / / musesco
 re . org / en /
  []
 
 
-Underfull \hbox (badness 2951) in paragraph at lines 1129--1130
+Underfull \hbox (badness 2951) in paragraph at lines 1130--1131
 []\OT1/ptm/m/n/8 Matlab soft-ware by Math-works, [On-line]. Available:$https : 
 / / www .
  []
