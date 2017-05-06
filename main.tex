@@ -457,10 +457,9 @@
 % make the title area
 \maketitle
 
-
 \begin{abstract}
 %\boldmath
-OCR for music recognition and playback aims to address the problem of music data acquisition. It accomplishes this by using OCR to recognize the music score and converts it into MusicXML file format. MusicXML file is the industry standard way of representing western musical notation. The conversion of the recognized symbols to MusicXML file format enables the user to store, edit, play and share his music. The main motivation behind the project is to develop software like ``Cam Scanner''\cite{IEEEhowto:camscanner} for musical score sheets that can be used by learners, professional musicians and publishers with ease. The character recognition has been implemented through template matching using normalized cross correlation. The Music table of recognized symbols with (x,y)coordinates, staff number, duration, stem, octave, step and alter is generated, which will be helpful to test the correctness of the recognized symbols. Currently 10 different instruments such as guitar, violin, mandolin, melodica, banjo, koto, kazoo, electric guitar, sitar, mezzo-soprano are supported for music playback by using Muse Score software. The implementation was done through in Matlab(version R2014a - 8.3.0.532).
+OCR for music recognition and playback aims to address the problem of music data acquisition. It accomplishes this by using OCR to recognize the music score and converts it into MusicXML file format. MusicXML file is the industry standard way of representing western musical notation. The conversion of the recognized symbols to MusicXML file format enables the user to store, edit, play and share his music. The main motivation behind the project is to develop software like ``Cam Scanner''\cite{IEEEhowto:camscanner} for musical score sheets that can be used by learners, professional musicians and publishers with ease. The character recognition has been implemented through template matching using normalized cross correlation. The Music table of recognized symbols with (x,y)coordinates, staff number, duration, stem, octave, step and alter is generated, which will be helpful to test the correctness of the recognized symbols. Currently 10 different instruments such as guitar, violin, mandolin, melodica, banjo, koto, kazoo, electric guitar, sitar, mezzo-soprano are supported for music playback by using Muse Score software. The implementation was done through in Matlab(version R2014a - 8.3.0.532)\cite{IEEEhowto:matlab}.
 \end{abstract}
 % IEEEtran.cls defaults to using nonbold math in the Abstract.
 % This preserves the distinction between vectors and scalars. However,
@@ -471,11 +470,8 @@ OCR for music recognition and playback aims to address the problem of music data
 
 % Note that keywords are not normally used for peerreview papers.
 \begin{IEEEkeywords}
-OCR, MusicXML, Cam Scanner, Template matching, Normalized cross correlation, Matlab. 
+OCR, MusicXML, Cam Scanner, Template matching, Normalized cross correlation, Matlab, MuseScore. 
 \end{IEEEkeywords}
-
-
-
 
 
 
@@ -496,6 +492,7 @@ Here goes the introduction
 
 \section{Overview of Sheet Music}
 % Intro text here
+This section provides a brief introduction of terminologies used in music theory, music symbols and conventions followed in sheet music\cite{IEEEhowto:harnum}.	
 \subsubsection{The Staff}
 Music is written on a staff (plural: staves) which is five horizontal parallel lines. The five lines
 create four spaces between them. The staff lines are shown in the Fig. 1.
@@ -534,8 +531,8 @@ bar lines, double bar lines and measures are shown in Fig. 2.
 \caption{Space notes and line notes on the staff}
 \end{figure}
 
-\subsubsection{Notes}`
-Depending on the position of the notes on the stafflines, there are 2 types of notes. 
+\subsubsection{Notes}
+Depending on the position of the notes on the staff lines, there are 2 types of notes. 
 \begin{itemize}
   \item \textbf{Space Notes}: A space note is a note whose note head fits within a space on the staff.
   \item \textbf{Line Notes}: Any note with a line through it.
@@ -545,9 +542,7 @@ notes. Pitch is the highness or lowness of a note. It is determined by the frequ
 producing it. See Fig. 3.
 
 \subsubsection{Note lengths}
-There are different types of notes depending on the number of beats. In this
-project, the recognition and the playback have been implemented for whole note, half note
-and quarter note. Note lengths and symbols are as shown in the Fig. 4.
+There are different types of notes depending on the number of beats. Note lengths and symbols are as shown in the Fig. 4.
 
 \subsubsection{Note head and stem}
 Note head is the round part. The position of the note head gives the
@@ -708,7 +703,7 @@ Fig. 11. The symbols of the music sheet described in this chapter are the symbol
 % stfloats package.
 
 \section{MusicXML}
-MusicXML (Music Extensive Markup Language) is a digital sheet music interchange and distribution format. The goal is to create a universal format for common Western music notation, similar to the role that the MP3 format serves for recorded music.\par
+MusicXML (Music Extensive Markup Language) is a digital sheet music interchange and distribution format. The goal is to create a universal format for common Western music notation, similar to the role that the MP3 format serves for recorded music\cite{IEEEhowto:musicxml}.\par
 The musical information is designed to be usable by notation programs, sequencers and other performance programs, music education
 programs and music databases. It is designed from the ground up for sharing sheet music files between applications and for archiving sheet music files for use in the future. MusicXML files are
 readable and usable by a wide range of music notation applications. MusicXML complements the
@@ -768,7 +763,7 @@ standalone are optional attributes.
 
 \section{Software Requirements}
  The input image acquired has to be subjected to various processing operations for recognising the characters in the music score sheet. Thus, the platform used for the implementation  should support
-image processing operations. Matlab has extensive support for image processing operations through “Image Processing Toolbox". Matlab also has “Data and File Management Toolbox” which can be used to read, write and generate XML files. MusicXML being one of the types of XML file, the toolbox will be able to handle it's basic operations also. Hence Matlab becomes a good choice for implementation. Matlab version R2014a - 8.3.0.532 has been used for the implementation of the algorithm. For reading MusicXML files “MuseScore” can be used. MuseScore is a free and opensource score writer software with rich features.
+image processing operations. Matlab has extensive support for image processing operations through ``Image Processing Toolbox". Matlab also has ``Data and File Management Toolbox" which can be used to read, write and generate XML files. MusicXML being one of the types of XML file, the toolbox will be able to handle it's basic operations also. Hence Matlab becomes a good choice for implementation. Matlab version R2014a - 8.3.0.532 has been used for the implementation of the OCR algorithm. For reading MusicXML files “MuseScore” can be used. MuseScore is a free and opensource score writer software with rich features.
 
 \section{Implementation}
 This section presents the steps involved in converting the captured image of a score sheet into MusicXML file. Fig. 12 provides the graphical representation of sequence of operations involved in the conversion of image of a score sheet to MusicXML file.
@@ -814,8 +809,8 @@ Morphological image processing is a collection of non-linear operations related 
 pixel values, not on their numerical values and therefore are especially suited to the processing of binary images. Morphological techniques typically probe an image with a small template known as a Structuring Element (SE). The SE is very small compared to the image size. They are usually made up of
 ones and zeroes. The SEs usually have odd orders like 3x3, 5x5, 7x7 etc. because, while performing any morphological operations, the center pixel of the SE is placed on each and every pixel of the
 image and the operation is thus performed. The SE is positioned at all possible locations in the image and it is compared with the corresponding neighborhood pixels. By marking the locations
-where SE fits or hits the image, information about the structure of the image can be obtained. The SE ``fits” image if for each of its pixels that is set to 1(foreground), the corresponding image pixel
-is also set to 1.\par Dilation and erosion are morphological image processing techniques which are extensively used in staff line removal.
+where SE fits or hits(intersects) the image, information about the structure of the image can be obtained. The SE ``fits” image if for each of its pixels that is set to 1(foreground), the corresponding image pixel
+is also set to 1 \cite{IEEEhowto:aukland}.\par Dilation and erosion are morphological image processing techniques which are extensively used in staff line removal.
 
 \subsection{Staff Line Removal}
  Removing staff lines is important, because
@@ -825,7 +820,7 @@ in the score sheet essentially the same symbol will be placed on different staff
 The dilation of an image f by a structuring element s (denoted by $ f \oplus s $)
 produces a new binary image 
 \[g = f \oplus s \] 
-with ones in all locations (x,y) of a structuring element’s origin at which that structuring element s fits the the input image f, i.e. g(x,y) = 1 if s fits f and 0 otherwise, repeating f, i.e. g(x,y) = 1 if s hits f and 0 otherwise, repeating. \par
+with ones in all locations (x,y) of a structuring element’s origin at which that structuring element s intersects the input image f, i.e. g(x,y) = 1 if s intersects f and 0 otherwise for all pixel coordinates (x,y).
 The holes enclosed by a single region and gaps between different regions become smaller, and
 small intrusions into boundaries of a region are filled in. Fig. 16 shows the effects of dilation on an input image.
 
@@ -864,7 +859,7 @@ The symbol recognition is the critical and most important step OCR systems. This
 is a small image (sub-image), the goal is to find occurrences of this template in a larger image. Template matching techniques compare portions of images against one another. Sample images are used to recognize similar objects in source image.\par
 Template matching has been a classical approach to the problems of locating and recognizing of an object in an image. Among several matching methods, Normalized Cross Correlation and Square root of Sum of Square Differences have been used as the measure for similarity. Moreover, many other template matching techniques, such as Sum of Absolute Differences (SAD) and Sequential Similarity Detection Algorithm (SSDA) have been adopted in many applications for pattern recognition. In the project Normalized Cross Correlation technique is used for template matching. \par
 Correlation is a measure of the degree to which two variables agree, not necessary in actual value but in general behavior. The two variables are the corresponding pixel values in two images, template and source. The cross-correlation of two real continuous functions x(t) and y(t) , is defined by
-\[ \phi _{xy} (t) = \int x(t - \tau  )y(\tau)d \tau \]
+\[ \phi _{xy} (t) = \int x(\tau - t)y(\tau)d \tau \]
 In comparison to convolution
 \[ x(t)*y(t) = \int _{- \infty }^{ \infty } x( \tau - t)*y(\tau)d \tau \]
 It can be seen that the only difference is that for the cross correlation, one of the two functions is not reversed.
@@ -873,7 +868,7 @@ Since the operation of time reversal is the same as taking the complex conjugate
 \[ \phi_{xy} = FT[\phi|xy(t)] = X(f)*Y(f) \]
 In the discrete domain, the correlation of two real time series $x_i$, i = 0, 1, . . . , M-1 and $y_j$, j = 0,1, . . . , N-1 is by analogy to equation (1) given by
 \[ \phi _{xy, k} = \sum_{j = max(0,k)}^{min(M-1+k, N-1)} x_{j-k} + y_{j} \]
-where k = -[M+1],0,(N-1)
+where k = -[M+1], 0, (N-1)
 
 \subsection{Normalized Cross Correlation}
 The normalized correlation for two time series can be defined as
@@ -885,7 +880,7 @@ The main advantage of the normalized cross correlation over the ordinary cross c
 cross correlation method. The database of symbols includes flat, sharp, rests, half note, whole note and quarter note as shown in Fig. 18 to Fig. 22.
 
 \subsubsection{Vertical Translation}
-Vertical Translation of a symbol is used to denote its pitch. It is also a crucial parameter in determining the actual symbol. Any error in this step will distort music. Hence it is one part of the recognition where error is intolerable. The position of staff lines in the score sheet is fixed. This principle is useful in finding out the vertical translation. After the normalized cross correlation, the (x,y) coordinate value of the center pixel will be available. Comparing this with the standard value, the vertical translation can be easily obtained. Combining both the symbol and its vertical translation the perfect output is obtained. After this step finally the symbols will be ready for Music
+Vertical Translation of a symbol is used to denote its pitch. It is also a critical parameter in determining the actual symbol. Any error in this step will distort music. Hence in this part of recognition process error is intolerable. The position of staff lines in the score sheet is fixed. This principle is useful in finding out the vertical translation. After the normalized cross correlation, the (x,y) coordinate value of the center pixel will be available. Comparing this with the standard value, the vertical translation can be easily obtained. Combining both the symbol and its vertical translation the perfect output is obtained. After this step finally the symbols will be ready for Music
 XML conversion and playback.
 
 \begin{figure}
@@ -1118,6 +1113,9 @@ Jonathan Harnum,``Basic Music Theory",\emph{Sol-UT Press} 2001.
 \bibitem{IEEEhowto:gonzalez}
 R.C. Gonzalez, R.E. Woods,``Digital Image Processing second edition",\emph{Prentice Hall} 2002.
 
+\bibitem{IEEEhowto:aukland}
+Morphological Image processing lecture notes, Intelligent Vision Systems: COMPSCI 773 course, University of Auckland [Online]. Available: \url{https://www.cs.auckland.ac.nz/courses/compsci773s1c/lectures/ImageProcessing-html/topic4.htm}
+
 \bibitem{IEEEhowto:chen}
 Liang Chen and Christopher Raphael,``Human-Directed Optical Music Recognition", [Online].Available: \url{http://homes.soic.indiana.edu/chen348/papers/human_directed_omr_drr.pdf}
 
@@ -1126,6 +1124,9 @@ MuseScore Handbook, [Online]. Available:\url{https://musescore.org/en/handbook}
 
 \bibitem{IEEEhowto:camscanner}
 Camscanner ocr software, [Online]. Available:\url{https://www.camscanner.com/}
+
+\bibitem{IEEEhowto:matlab}
+Matlab software by Mathworks, [Online]. Available:\url{https://www.mathworks.com/products/matlab.html}
 
 
 \bibitem{IEEEhowto:musicxml}
